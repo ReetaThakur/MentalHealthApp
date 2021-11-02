@@ -1,4 +1,4 @@
-package com.example.mentalhealth
+package com.application.mentalhealth
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

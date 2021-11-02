@@ -1,4 +1,4 @@
-package com.example.mentalhealth
+package com.application.mentalhealth
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
