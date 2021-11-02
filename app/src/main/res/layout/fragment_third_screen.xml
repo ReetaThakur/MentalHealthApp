@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".splashandonboarding.ThirdScreen">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="275dp"
         android:layout_marginTop="54dp"
-        app:srcCompat="@drawable/image" />
+        android:src="@drawable/ic_svg3"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -20,7 +19,7 @@
         android:layout_marginTop="8dp"
         android:layout_gravity="center"
         android:fontFamily="sans-serif-medium"
-        android:text="Did you know?"
+        android:text="Let’s get started"
         android:textColor="#231E32"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="14dp"
@@ -35,11 +34,7 @@
         android:textColor="#4F4B5B"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:text="When you prioritize healthy,
-        small changes, you’ll be able to
-build routines that serve you
-even under intense stress,
-heavy emotion or true devastation."/>
+        android:text="Let’s get started by creating your profile so you won’t lose your information when you change your phone."/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"

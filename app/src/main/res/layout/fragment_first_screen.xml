@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="275dp"
         android:layout_marginTop="54dp"
-        app:srcCompat="@drawable/image" />
+        android:src="@drawable/ic_svg1"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
@@ -35,11 +35,7 @@
         android:textColor="#4F4B5B"
         android:layout_marginStart="18dp"
         android:layout_marginEnd="18dp"
-        android:text="When you prioritize healthy,
-        small changes, you’ll be able to
-build routines that serve you
-even under intense stress,
-heavy emotion or true devastation."/>
+        android:text="When you prioritize healthy, small changes, you’ll be able to build routines that serve you even under intense stress, heavy emotion or true devastation."/>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
@@ -49,7 +45,8 @@ heavy emotion or true devastation."/>
             android:id="@+id/btnNext1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_above="@id/skipText"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
@@ -57,16 +54,5 @@ heavy emotion or true devastation."/>
             android:text="Next"
             android:textAllCaps="false"
             android:textSize="14sp" />
-        <TextView
-            android:id="@+id/skipText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_centerHorizontal="true"
-            android:textColor="#D17D49"
-            android:text="Skip Now"
-            android:layout_alignParentBottom="true"
-            android:textSize="16sp"
-            android:layout_gravity="center"/>
     </RelativeLayout>
 </LinearLayout>

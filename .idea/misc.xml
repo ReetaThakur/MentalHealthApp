@@ -3,8 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/drawable/ic_svg4.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/drawable/ic_svg41.xml" value="0.290625" />
         <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_eight_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_fifth_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_first_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_fourth_screen.xml" value="0.1793478260869565" />
         <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_home.xml" value="0.14375" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_nineth_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_second_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_seventh_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_sixth_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_tenth_screen.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_third_screen.xml" value="0.1793478260869565" />
       </map>
     </option>
   </component>

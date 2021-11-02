@@ -5,68 +5,57 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".splashandonboarding.EightScreen">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
         android:layout_height="275dp"
-        android:layout_marginTop="54dp"
-        app:srcCompat="@drawable/image" />
+        android:layout_marginTop="140dp"
+        android:src="@drawable/ic_svg8"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_gravity="center"
-        android:fontFamily="sans-serif-medium"
-        android:text="Did you know?"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:text="Do you often feel down or lacking in energy?"
         android:textColor="#231E32"
         android:layout_marginStart="14dp"
         android:layout_marginEnd="14dp"
-        android:textSize="26sp"/>
-    <TextView
-        android:id="@+id/desc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_gravity="center"
-        android:textSize="20sp"
-        android:textColor="#4F4B5B"
-        android:layout_marginStart="18dp"
-        android:layout_marginEnd="18dp"
-        android:text="When you prioritize healthy,
-        small changes, you’ll be able to
-build routines that serve you
-even under intense stress,
-heavy emotion or true devastation."/>
-    <RelativeLayout
+        android:textSize="24sp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
-        android:layout_height="match_parent">
+        android:layout_height = "wrap_content">
 
         <Button
-            android:id="@+id/btnNext8"
-            android:layout_width="match_parent"
+            android:id="@+id/btnNext5"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_above="@id/skipText"
+            android:layout_weight="1"
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
             android:backgroundTint="#25A18E"
-            android:text="Next"
+            android:text="Yes"
             android:textAllCaps="false"
             android:textSize="14sp" />
-        <TextView
-            android:id="@+id/skipText"
+        <Button
+            android:id="@+id/btnNext51"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_centerHorizontal="true"
-            android:textColor="#D17D49"
-            android:text="Skip Now"
-            android:layout_alignParentBottom="true"
-            android:textSize="16sp"
-            android:layout_gravity="center"/>
-    </RelativeLayout>
+            android:layout_marginStart="30dp"
+            android:layout_weight="1"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#25A18E"
+            android:text="No"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+    </LinearLayout>
 </LinearLayout>
