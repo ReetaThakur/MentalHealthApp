@@ -14,7 +14,7 @@ class SeventhScreen : Fragment(R.layout.fragment_seventh_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.btnNext7.setOnClickListener {
-            findNavController().navigate(R.id.action_seventhScreen_to_onBoardingBottomSheetFragment)
+            findNavController().navigate(R.id.action_seventhScreen_to_onBoardingBottomSheetFragmentSeven)
         }
     }
 }

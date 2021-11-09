@@ -14,7 +14,7 @@ class NinethScreen : Fragment(R.layout.fragment_nineth_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.btnNext9.setOnClickListener {
-            findNavController().navigate(R.id.action_ninethScreen_to_onBoardingBottomSheetFragment)
+            findNavController().navigate(R.id.action_ninethScreen_to_onBoardingBottomSheetFragmentNine)
         }
     }
 }

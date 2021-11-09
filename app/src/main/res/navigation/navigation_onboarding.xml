@@ -68,27 +68,10 @@
             android:id="@+id/action_fifthScreen_to_sixthScreen"
             app:destination="@id/sixthScreen" />
         <action
-            android:id="@+id/action_fifthScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+            android:id="@+id/action_fifthScreen_to_onBoardingBottomSheetFragmentFive"
+            app:destination="@id/onBoardingBottomSheetFragmentFive" />
     </fragment>
-    <dialog
-        android:id="@+id/onBoardingBottomSheetFragment"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragment"
-        android:label="fragment_on_boarding_bottom_sheet"
-        tools:layout="@layout/fragment_on_boarding_bottom_sheet" >
-        <action
-            android:id="@+id/action_onBoardingBottomSheetFragment_to_sixthScreen"
-            app:destination="@id/sixthScreen" />
-        <action
-            android:id="@+id/action_onBoardingBottomSheetFragment_to_seventhScreen"
-            app:destination="@id/seventhScreen" />
-        <action
-            android:id="@+id/action_onBoardingBottomSheetFragment_to_eightScreen"
-            app:destination="@id/eightScreen" />
-        <action
-            android:id="@+id/action_onBoardingBottomSheetFragment_to_tenthScreen"
-            app:destination="@id/tenthScreen" />
-    </dialog>
+
     <fragment
         android:id="@+id/sixthScreen"
         android:name="com.application.mentalhealth.splashandonboarding.SixthScreen"
@@ -98,8 +81,8 @@
             android:id="@+id/action_sixthScreen_to_seventhScreen"
             app:destination="@id/seventhScreen" />
         <action
-            android:id="@+id/action_sixthScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+            android:id="@+id/action_sixthScreen_to_onBoardingBottomSheetFragmentSix"
+            app:destination="@id/onBoardingBottomSheetFragmentSix" />
     </fragment>
     <fragment
         android:id="@+id/seventhScreen"
@@ -110,8 +93,8 @@
             android:id="@+id/action_seventhScreen_to_eightScreen"
             app:destination="@id/eightScreen" />
         <action
-            android:id="@+id/action_seventhScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+            android:id="@+id/action_seventhScreen_to_onBoardingBottomSheetFragmentSeven"
+            app:destination="@id/onBoardingBottomSheetFragmentSeven" />
     </fragment>
     <fragment
         android:id="@+id/eightScreen"
@@ -122,8 +105,8 @@
             android:id="@+id/action_eightScreen_to_ninethScreen"
             app:destination="@id/ninethScreen" />
         <action
-            android:id="@+id/action_eightScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+            android:id="@+id/action_eightScreen_to_onBoardingBottomSheetFragmentEight"
+            app:destination="@id/onBoardingBottomSheetFragmentEight" />
     </fragment>
     <fragment
         android:id="@+id/ninethScreen"
@@ -134,24 +117,79 @@
             android:id="@+id/action_ninethScreen_to_tenthScreen"
             app:destination="@id/tenthScreen" />
         <action
-            android:id="@+id/action_ninethScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+            android:id="@+id/action_ninethScreen_to_onBoardingBottomSheetFragmentNine"
+            app:destination="@id/onBoardingBottomSheetFragmentNine" />
     </fragment>
     <fragment
         android:id="@+id/tenthScreen"
         android:name="com.application.mentalhealth.splashandonboarding.TenthScreen"
         android:label="fragment_tenth_screen"
         tools:layout="@layout/fragment_tenth_screen" >
-        <action
-            android:id="@+id/action_tenthScreen_to_onBoardingBottomSheetFragment"
-            app:destination="@id/onBoardingBottomSheetFragment" />
+
         <action
             android:id="@+id/action_tenthScreen_to_connectorActivity"
             app:destination="@id/connectorActivity" />
+        <action
+            android:id="@+id/action_tenthScreen_to_onBoardingBottomSheetFragmentTen"
+            app:destination="@id/onBoardingBottomSheetFragmentTen" />
     </fragment>
     <activity
         android:id="@+id/connectorActivity"
         android:name="com.application.mentalhealth.ConnectorActivity"
         android:label="activity_connector"
         tools:layout="@layout/activity_connector" />
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragmentFive"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentFive"
+        android:label="fragment_on_boarding_bottom_sheet_five"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_five" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentFive_to_sixthScreen"
+            app:destination="@id/sixthScreen" />
+    </dialog>
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragmentSix"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentSix"
+        android:label="fragment_on_boarding_bottom_sheet_six"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_six" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentSix_to_seventhScreen"
+            app:destination="@id/seventhScreen" />
+    </dialog>
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragmentSeven"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentSeven"
+        android:label="fragment_on_boarding_bottom_sheet_seven"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_seven" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentSeven_to_eightScreen"
+            app:destination="@id/eightScreen" />
+    </dialog>
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragmentEight"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentEight"
+        android:label="fragment_on_boarding_bottom_sheet_eight"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_eight" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentEight_to_ninethScreen"
+            app:destination="@id/ninethScreen" />
+    </dialog>
+    <fragment
+        android:id="@+id/onBoardingBottomSheetFragmentNine"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentNine"
+        android:label="fragment_on_boarding_bottom_sheet_nine"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_nine" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentNine_to_tenthScreen"
+            app:destination="@id/tenthScreen" />
+    </fragment>
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragmentTen"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentTen"
+        android:label="fragment_on_boarding_bottom_sheet_ten"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet_ten" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragmentTen_to_connectorActivity"
+            app:destination="@id/connectorActivity" />
+    </dialog>
 </navigation>
