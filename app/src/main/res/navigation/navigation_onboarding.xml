@@ -135,7 +135,7 @@
     </fragment>
     <activity
         android:id="@+id/connectorActivity"
-        android:name="com.application.mentalhealth.ConnectorActivity"
+        android:name="com.application.mentalhealth.SimpleViews.ConnectorActivity"
         android:label="activity_connector"
         tools:layout="@layout/activity_connector" />
     <dialog
