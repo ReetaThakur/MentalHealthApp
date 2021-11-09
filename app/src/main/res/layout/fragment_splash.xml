@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.application.mentalhealth.SplashAndOnBoarding.SplashFragment">
+    <ImageView
+        android:id="@+id/SplashImageView"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:id="@+id/algea1"
+        android:layout_width="80dp"
+        android:layout_height="160dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/algae" />
+    <ImageView
+        android:id="@+id/algea2"
+        android:layout_width="80dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/algae2"
+        android:layout_alignParentEnd="true"
+        android:layout_height="40dp"/>
+    <ImageView
+        android:id="@+id/algea3"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_toStartOf="@id/algea1"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/algea4"/>
+    <ImageView
+        android:id="@+id/algea4"
+        android:layout_width="40dp"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/algae3"
+        android:layout_toStartOf="@id/algea2"
+        android:layout_height="20dp"/>
+</RelativeLayout>

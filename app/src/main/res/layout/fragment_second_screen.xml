@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.application.mentalhealth.SplashAndOnBoarding.SecondScreen">
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/ic_svg2"/>
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:text="Happy to have you here!"
+        android:textColor="#231E32"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="14dp"
+        android:textSize="26sp"/>
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#4F4B5B"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="A place where you can plant your habits and build your mental wellbeing for a better and stress-free tomorrow."/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginBottom="20dp"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnNext2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="60dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="#25A18E"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</LinearLayout>

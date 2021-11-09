@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_checking.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_eight.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_five.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_nine.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_seven.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_six.xml" value="0.2604166666666667" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_ten.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_seventh_screen.xml" value="0.1334853090172239" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

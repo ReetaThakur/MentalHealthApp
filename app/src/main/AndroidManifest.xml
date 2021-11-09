@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
         <activity
-            android:name="com.application.mentalhealth.MainActivity"
+            android:name=".SimpleViews.ConnectorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SimpleViews.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
