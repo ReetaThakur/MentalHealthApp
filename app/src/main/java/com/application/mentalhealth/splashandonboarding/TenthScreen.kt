@@ -1,4 +1,4 @@
-package com.example.mentalhealth.splashandonboarding
+package com.application.mentalhealth.splashandonboarding
 
 import android.content.Context
 import android.os.Bundle
@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
-import com.example.mentalhealth.R
+import com.application.mentalhealth.R
 import kotlinx.android.synthetic.main.fragment_tenth_screen.view.*
 
 class TenthScreen : Fragment() {
@@ -20,7 +20,7 @@ class TenthScreen : Fragment() {
         val view = inflater.inflate(R.layout.fragment_tenth_screen, container, false)
 
         view.btnNext10.setOnClickListener {
-            findNavController().navigate(R.id.action_viewPagerFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_viewPagerFragment_to_mainActivity)
             onBoardingFinished()
         }
         return view

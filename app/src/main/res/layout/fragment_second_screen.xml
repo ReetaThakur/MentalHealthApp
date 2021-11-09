@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".splashandonboarding.SecondScreen">
+    tools:context="com.application.mentalhealth.splashandonboarding.SecondScreen">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mentalhealth">
+    package="com.application.mentalhealth" >
 
     <application
         android:allowBackup="true"
@@ -8,10 +8,13 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MentalHealth">
+        android:theme="@style/Theme.MentalHealth" >
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name="com.application.mentalhealth.CheckingActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.application.mentalhealth.SplashActivity"
+            android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

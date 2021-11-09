@@ -1,4 +1,4 @@
-package com.example.mentalhealth.splashandonboarding
+package com.application.mentalhealth.splashandonboarding
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

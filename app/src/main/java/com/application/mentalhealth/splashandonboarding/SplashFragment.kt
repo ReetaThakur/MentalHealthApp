@@ -1,4 +1,4 @@
-package com.example.mentalhealth.splashandonboarding
+package com.application.mentalhealth.splashandonboarding
 
 import android.content.Context
 import android.os.Bundle
@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import com.application.mentalhealth.R
 import com.bumptech.glide.Glide
-import com.example.mentalhealth.R
 import kotlinx.android.synthetic.main.fragment_splash.*
 
 class SplashFragment : Fragment(R.layout.fragment_splash) {
@@ -21,7 +21,7 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
 
         Handler().postDelayed({
             if(onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
             }

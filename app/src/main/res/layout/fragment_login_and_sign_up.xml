@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".splashandonboarding.LoginAndSignUpFragment">
+    tools:context="com.application.mentalhealth.splashandonboarding.LoginAndSignUpFragment">
 
     <TextView
         android:layout_width="wrap_content"
