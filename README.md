@@ -56,6 +56,17 @@ Copy the link of this repositary. Paste the link in Url Box of Android Studio wi
     
 
 # Dependencies 
+    // Vewpager
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    
+    //Navigation
+    implementation 'androidx.navigation:navigation-ui-ktx:2.3.5'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.google.android.material:material:1.4.0'
    
     
   ## [Contributors](#Contributors)
