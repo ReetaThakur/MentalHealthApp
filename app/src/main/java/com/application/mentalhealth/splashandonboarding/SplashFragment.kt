@@ -16,21 +16,10 @@ class SplashFragment : Fragment(R.layout.fragment_splash) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Glide.with(this).asGif().load(R.raw.splash).into(SplashImageView)
-    }
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
         Handler().postDelayed({
-            if(onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-            }else{
-                findNavController().navigate(R.id.action_splashFragment_to_viewPagerFragment)
-            }
+            findNavController().navigate(R.id.action_splashFragment_to_firstScreen)
         }, 5600)
-
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_splash, container, false)
     }
-
     private fun onBoardingFinished(): Boolean{
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         return sharedPref.getBoolean("Finished", false)

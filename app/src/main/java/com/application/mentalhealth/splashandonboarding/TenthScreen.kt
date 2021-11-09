@@ -12,20 +12,12 @@ import kotlinx.android.synthetic.main.fragment_tenth_screen.view.*
 
 class TenthScreen : Fragment() {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_tenth_screen, container, false)
-
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
         view.btnNext10.setOnClickListener {
-            findNavController().navigate(R.id.action_viewPagerFragment_to_mainActivity)
-            onBoardingFinished()
+            findNavController().navigate(R.id.action_tenthScreen_to_onBoardingBottomSheetFragment)
         }
-        return view
     }
-
     private fun onBoardingFinished(){
         val sharedPref = requireActivity().getSharedPreferences("onBoarding", Context.MODE_PRIVATE)
         val editor = sharedPref.edit()

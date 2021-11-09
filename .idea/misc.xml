@@ -3,31 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/drawable/ic_svg4.xml" value="0.19166666666666668" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/drawable/ic_svg41.xml" value="0.290625" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_checking.xml" value="0.16666666666666666" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.1334853090172239" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/bottom_sheet_selection.xml" value="0.25815217391304346" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_bottom_sheet.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_category.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_discover.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_eight_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_fifth_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_first_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_fourth_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_home.xml" value="0.14375" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_nineth_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_second_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_seventh_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_sixth_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_splash.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_tenth_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_third_screen.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_view_pager.xml" value="0.17300724637681159" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/header.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/menu/bottom_nav.xml" value="0.27447916666666666" />
-        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/menu/side_nav.xml" value="0.27447916666666666" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_checking.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.2708333333333333" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.1334853090172239" />
+        <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet.xml" value="0.2708333333333333" />
       </map>
     </option>
   </component>

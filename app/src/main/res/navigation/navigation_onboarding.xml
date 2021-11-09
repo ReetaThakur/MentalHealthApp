@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_onboarding"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.application.mentalhealth.splashandonboarding.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_firstScreen"
+            app:destination="@id/firstScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/firstScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.FirstScreen"
+        android:label="fragment_first_screen"
+        tools:layout="@layout/fragment_first_screen" >
+        <action
+            android:id="@+id/action_firstScreen_to_secondScreen"
+            app:destination="@id/secondScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.SecondScreen"
+        android:label="fragment_second_screen"
+        tools:layout="@layout/fragment_second_screen" >
+        <action
+            android:id="@+id/action_secondScreen_to_thirdScreen"
+            app:destination="@id/thirdScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.ThirdScreen"
+        android:label="fragment_third_screen"
+        tools:layout="@layout/fragment_third_screen" >
+        <action
+            android:id="@+id/action_thirdScreen_to_fourthScreen"
+            app:destination="@id/fourthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.FourthScreen"
+        android:label="fragment_fourth_screen"
+        tools:layout="@layout/fragment_fourth_screen" >
+        <action
+            android:id="@+id/action_fourthScreen_to_loginAndSignUpFragment"
+            app:destination="@id/loginAndSignUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginAndSignUpFragment"
+        android:name="com.application.mentalhealth.splashandonboarding.LoginAndSignUpFragment"
+        android:label="fragment_login_and_sign_up"
+        tools:layout="@layout/fragment_login_and_sign_up" >
+        <action
+            android:id="@+id/action_loginAndSignUpFragment_to_fifthScreen"
+            app:destination="@id/fifthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.FifthScreen"
+        android:label="fragment_fifth_screen"
+        tools:layout="@layout/fragment_fifth_screen" >
+        <action
+            android:id="@+id/action_fifthScreen_to_sixthScreen"
+            app:destination="@id/sixthScreen" />
+        <action
+            android:id="@+id/action_fifthScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/onBoardingBottomSheetFragment"
+        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragment"
+        android:label="fragment_on_boarding_bottom_sheet"
+        tools:layout="@layout/fragment_on_boarding_bottom_sheet" >
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragment_to_sixthScreen"
+            app:destination="@id/sixthScreen" />
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragment_to_seventhScreen"
+            app:destination="@id/seventhScreen" />
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragment_to_eightScreen"
+            app:destination="@id/eightScreen" />
+        <action
+            android:id="@+id/action_onBoardingBottomSheetFragment_to_tenthScreen"
+            app:destination="@id/tenthScreen" />
+    </dialog>
+    <fragment
+        android:id="@+id/sixthScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.SixthScreen"
+        android:label="fragment_sixth_screen"
+        tools:layout="@layout/fragment_sixth_screen" >
+        <action
+            android:id="@+id/action_sixthScreen_to_seventhScreen"
+            app:destination="@id/seventhScreen" />
+        <action
+            android:id="@+id/action_sixthScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.SeventhScreen"
+        android:label="fragment_seventh_screen"
+        tools:layout="@layout/fragment_seventh_screen" >
+        <action
+            android:id="@+id/action_seventhScreen_to_eightScreen"
+            app:destination="@id/eightScreen" />
+        <action
+            android:id="@+id/action_seventhScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eightScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.EightScreen"
+        android:label="fragment_eight_screen"
+        tools:layout="@layout/fragment_eight_screen" >
+        <action
+            android:id="@+id/action_eightScreen_to_ninethScreen"
+            app:destination="@id/ninethScreen" />
+        <action
+            android:id="@+id/action_eightScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ninethScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.NinethScreen"
+        android:label="fragment_nineth_screen"
+        tools:layout="@layout/fragment_nineth_screen" >
+        <action
+            android:id="@+id/action_ninethScreen_to_tenthScreen"
+            app:destination="@id/tenthScreen" />
+        <action
+            android:id="@+id/action_ninethScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tenthScreen"
+        android:name="com.application.mentalhealth.splashandonboarding.TenthScreen"
+        android:label="fragment_tenth_screen"
+        tools:layout="@layout/fragment_tenth_screen" >
+        <action
+            android:id="@+id/action_tenthScreen_to_onBoardingBottomSheetFragment"
+            app:destination="@id/onBoardingBottomSheetFragment" />
+        <action
+            android:id="@+id/action_tenthScreen_to_connectorActivity"
+            app:destination="@id/connectorActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/connectorActivity"
+        android:name="com.application.mentalhealth.ConnectorActivity"
+        android:label="activity_connector"
+        tools:layout="@layout/activity_connector" />
+</navigation>
