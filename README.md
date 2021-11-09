@@ -8,7 +8,6 @@ Mental Health Domain
 # 🔗Open-Source Library
 
 * [Glide](https://github.com/bumptech/glide)
-* [Retrofit](https://square.github.io/retrofit/)
 * [Firebase](https://firebase.google.com/docs/auth)
 * [RoomDatabase](https://developer.android.com/training/data-storage/room)
 
