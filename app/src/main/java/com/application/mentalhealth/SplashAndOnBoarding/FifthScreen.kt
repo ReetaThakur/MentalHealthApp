@@ -1,4 +1,4 @@
-package com.application.mentalhealth.splashandonboarding
+package com.application.mentalhealth.SplashAndOnBoarding
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

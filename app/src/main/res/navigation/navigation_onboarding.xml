@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/splashFragment"
-        android:name="com.application.mentalhealth.splashandonboarding.SplashFragment"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.SplashFragment"
         android:label="fragment_splash"
         tools:layout="@layout/fragment_splash" >
         <action
@@ -16,7 +16,7 @@
     </fragment>
     <fragment
         android:id="@+id/firstScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.FirstScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.FirstScreen"
         android:label="fragment_first_screen"
         tools:layout="@layout/fragment_first_screen" >
         <action
@@ -25,7 +25,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.SecondScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.SecondScreen"
         android:label="fragment_second_screen"
         tools:layout="@layout/fragment_second_screen" >
         <action
@@ -34,7 +34,7 @@
     </fragment>
     <fragment
         android:id="@+id/thirdScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.ThirdScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.ThirdScreen"
         android:label="fragment_third_screen"
         tools:layout="@layout/fragment_third_screen" >
         <action
@@ -43,7 +43,7 @@
     </fragment>
     <fragment
         android:id="@+id/fourthScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.FourthScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.FourthScreen"
         android:label="fragment_fourth_screen"
         tools:layout="@layout/fragment_fourth_screen" >
         <action
@@ -52,7 +52,7 @@
     </fragment>
     <fragment
         android:id="@+id/loginAndSignUpFragment"
-        android:name="com.application.mentalhealth.splashandonboarding.LoginAndSignUpFragment"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.LoginAndSignUpFragment"
         android:label="fragment_login_and_sign_up"
         tools:layout="@layout/fragment_login_and_sign_up" >
         <action
@@ -61,7 +61,7 @@
     </fragment>
     <fragment
         android:id="@+id/fifthScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.FifthScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.FifthScreen"
         android:label="fragment_fifth_screen"
         tools:layout="@layout/fragment_fifth_screen" >
         <action
@@ -74,7 +74,7 @@
 
     <fragment
         android:id="@+id/sixthScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.SixthScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.SixthScreen"
         android:label="fragment_sixth_screen"
         tools:layout="@layout/fragment_sixth_screen" >
         <action
@@ -86,7 +86,7 @@
     </fragment>
     <fragment
         android:id="@+id/seventhScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.SeventhScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.SeventhScreen"
         android:label="fragment_seventh_screen"
         tools:layout="@layout/fragment_seventh_screen" >
         <action
@@ -98,7 +98,7 @@
     </fragment>
     <fragment
         android:id="@+id/eightScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.EightScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.EightScreen"
         android:label="fragment_eight_screen"
         tools:layout="@layout/fragment_eight_screen" >
         <action
@@ -110,7 +110,7 @@
     </fragment>
     <fragment
         android:id="@+id/ninethScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.NinethScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.NinethScreen"
         android:label="fragment_nineth_screen"
         tools:layout="@layout/fragment_nineth_screen" >
         <action
@@ -122,7 +122,7 @@
     </fragment>
     <fragment
         android:id="@+id/tenthScreen"
-        android:name="com.application.mentalhealth.splashandonboarding.TenthScreen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.TenthScreen"
         android:label="fragment_tenth_screen"
         tools:layout="@layout/fragment_tenth_screen" >
 
@@ -140,7 +140,7 @@
         tools:layout="@layout/activity_connector" />
     <dialog
         android:id="@+id/onBoardingBottomSheetFragmentFive"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentFive"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentFive"
         android:label="fragment_on_boarding_bottom_sheet_five"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_five" >
         <action
@@ -149,7 +149,7 @@
     </dialog>
     <dialog
         android:id="@+id/onBoardingBottomSheetFragmentSix"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentSix"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentSix"
         android:label="fragment_on_boarding_bottom_sheet_six"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_six" >
         <action
@@ -158,7 +158,7 @@
     </dialog>
     <dialog
         android:id="@+id/onBoardingBottomSheetFragmentSeven"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentSeven"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentSeven"
         android:label="fragment_on_boarding_bottom_sheet_seven"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_seven" >
         <action
@@ -167,7 +167,7 @@
     </dialog>
     <dialog
         android:id="@+id/onBoardingBottomSheetFragmentEight"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentEight"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentEight"
         android:label="fragment_on_boarding_bottom_sheet_eight"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_eight" >
         <action
@@ -176,7 +176,7 @@
     </dialog>
     <fragment
         android:id="@+id/onBoardingBottomSheetFragmentNine"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentNine"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentNine"
         android:label="fragment_on_boarding_bottom_sheet_nine"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_nine" >
         <action
@@ -185,7 +185,7 @@
     </fragment>
     <dialog
         android:id="@+id/onBoardingBottomSheetFragmentTen"
-        android:name="com.application.mentalhealth.splashandonboarding.OnBoardingBottomSheetFragmentTen"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.OnBoardingBottomSheetFragmentTen"
         android:label="fragment_on_boarding_bottom_sheet_ten"
         tools:layout="@layout/fragment_on_boarding_bottom_sheet_ten" >
         <action

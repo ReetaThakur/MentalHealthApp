@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.application.mentalhealth.splashandonboarding.SplashFragment">
+    tools:context="com.application.mentalhealth.SplashAndOnBoarding.SplashFragment">
     <ImageView
         android:id="@+id/SplashImageView"
         android:layout_height="match_parent"

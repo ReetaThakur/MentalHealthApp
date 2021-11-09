@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.application.mentalhealth.splashandonboarding.ThirdScreen">
+    tools:context="com.application.mentalhealth.SplashAndOnBoarding.ThirdScreen">
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
