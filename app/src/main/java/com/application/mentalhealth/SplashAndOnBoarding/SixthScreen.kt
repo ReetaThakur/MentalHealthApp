@@ -16,5 +16,6 @@ class SixthScreen : Fragment(R.layout.fragment_sixth_screen) {
         btnNext6.setOnClickListener {
             findNavController().navigate(R.id.action_sixthScreen_to_seventhScreen)
         }
+
     }
 }

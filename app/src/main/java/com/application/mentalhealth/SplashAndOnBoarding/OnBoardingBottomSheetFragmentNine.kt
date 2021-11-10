@@ -24,5 +24,17 @@ class OnBoardingBottomSheetFragmentNine : Fragment() {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentNine_to_tenthScreen)
 
         }
+        btn_Considerably9.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentNine_to_tenthScreen)
+
+        }
+        btn_Slightly9.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentNine_to_tenthScreen)
+
+        }
+        btn_NotAtAll9.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentNine_to_tenthScreen)
+
+        }
     }
 }

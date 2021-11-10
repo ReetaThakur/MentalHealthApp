@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navsignup.xml"
+    app:startDestination="@id/signupFragment2">
+
+    <fragment
+        android:id="@+id/signupFragment2"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.login.SignupFragment2"
+        android:label="fragment_signup2"
+        tools:layout="@layout/fragment_signup2" >
+        <action
+            android:id="@+id/action_signupFragment2_to_fourthScreen3"
+            app:destination="@id/fourthScreen3" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthScreen3"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.FourthScreen"
+        android:label="fragment_fourth_screen"
+        tools:layout="@layout/fragment_fourth_screen" />
+</navigation>

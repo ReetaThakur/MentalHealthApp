@@ -25,5 +25,17 @@ class OnBoardingBottomSheetFragmentFive : BottomSheetDialogFragment() {
             btn_Extremely5.setOnClickListener {
                 findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentFive_to_sixthScreen)
         }
+
+        btn_Considerably5.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentFive_to_sixthScreen)
+        }
+
+        btn_Slightly5.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentFive_to_sixthScreen)
+        }
+
+        btn_NotAtAll5.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentFive_to_sixthScreen)
+        }
     }
 }

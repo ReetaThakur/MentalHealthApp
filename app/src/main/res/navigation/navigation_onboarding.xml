@@ -40,6 +40,9 @@
         <action
             android:id="@+id/action_thirdScreen_to_fourthScreen"
             app:destination="@id/fourthScreen" />
+        <action
+            android:id="@+id/action_thirdScreen_to_login"
+            app:destination="@id/login" />
     </fragment>
     <fragment
         android:id="@+id/fourthScreen"
@@ -47,16 +50,7 @@
         android:label="fragment_fourth_screen"
         tools:layout="@layout/fragment_fourth_screen" >
         <action
-            android:id="@+id/action_fourthScreen_to_loginAndSignUpFragment"
-            app:destination="@id/loginAndSignUpFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/loginAndSignUpFragment"
-        android:name="com.application.mentalhealth.SplashAndOnBoarding.LoginAndSignUpFragment"
-        android:label="fragment_login_and_sign_up"
-        tools:layout="@layout/fragment_login_and_sign_up" >
-        <action
-            android:id="@+id/action_loginAndSignUpFragment_to_fifthScreen"
+            android:id="@+id/action_fourthScreen_to_fifthScreen"
             app:destination="@id/fifthScreen" />
     </fragment>
     <fragment
@@ -192,4 +186,21 @@
             android:id="@+id/action_onBoardingBottomSheetFragmentTen_to_connectorActivity"
             app:destination="@id/connectorActivity" />
     </dialog>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.login.extra.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_fourthScreen3"
+            app:destination="@id/fourthScreen" />
+    </fragment>
+    <fragment
+        android:id="@+id/signin"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.login.extra.Signin"
+        android:label="Signin" >
+        <action
+            android:id="@+id/action_signin_to_fourthScreen"
+            app:destination="@id/fourthScreen" />
+    </fragment>
 </navigation>

@@ -50,6 +50,8 @@
             android:layout_marginBottom="140dp"
             android:backgroundTint="#25A18E"
             android:text="Next"
+            android:background="@drawable/apprectangle"
+
             android:textAllCaps="false"
             android:textSize="14sp" />
 

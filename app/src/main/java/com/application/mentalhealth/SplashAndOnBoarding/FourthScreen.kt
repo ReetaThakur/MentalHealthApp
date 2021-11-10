@@ -11,7 +11,7 @@ class FourthScreen : Fragment(R.layout.fragment_fourth_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.btnNext4.setOnClickListener {
-            findNavController().navigate(R.id.action_fourthScreen_to_loginAndSignUpFragment)
+            findNavController().navigate(R.id.action_fourthScreen_to_fifthScreen)
         }
     }
 }

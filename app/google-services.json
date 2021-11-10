@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "533294738308",
+    "project_id": "nino-b5210",
+    "storage_bucket": "nino-b5210.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533294738308:android:d1ef44d1b32b3af2fc4bd1",
+        "android_client_info": {
+          "package_name": "com.application.mentalhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533294738308-jgva108gpjltrrt8n2hc4bv3co3s6koq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.application.mentalhealth",
+            "certificate_hash": "87978e7ec24ccd9551ff9e99dc284d4668920e97"
+          }
+        },
+        {
+          "client_id": "533294738308-hkabm79uhjoqh57npmf1t551v7pa3f9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qN5MEXx6LrbeFd7xmShHXFzfS8AvLhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533294738308-hkabm79uhjoqh57npmf1t551v7pa3f9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:533294738308:android:bd1437c822912f90fc4bd1",
+        "android_client_info": {
+          "package_name": "com.example.mentalhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "533294738308-hkabm79uhjoqh57npmf1t551v7pa3f9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9qN5MEXx6LrbeFd7xmShHXFzfS8AvLhg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "533294738308-hkabm79uhjoqh57npmf1t551v7pa3f9e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

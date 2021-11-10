@@ -11,7 +11,7 @@ class LoginAndSignUpFragment : Fragment(R.layout.fragment_login_and_sign_up) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         view.btnLogin.setOnClickListener {
-            findNavController().navigate(R.id.action_loginAndSignUpFragment_to_fifthScreen)
+//            findNavController().navigate(R.id.action_loginAndSignUpFragment_to_fourthScreen)
         }
     }
 }

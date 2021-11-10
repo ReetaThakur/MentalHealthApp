@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".SplashAndOnBoarding.login.SignupFragment2">
+
+<TextView
+    android:id="@+id/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="16dp"
+    android:text="Username"
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etusernamelogin"
+        android:layout_width="360dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rectangle"
+        android:fontFamily="@font/nunito_extralight"
+        android:hint="Enter the user name"
+        android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/emailid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etusernamelogin"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Email id "
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/etemailidlogin"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/emailid"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your email id here"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/passwordlogin"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etemailidlogin"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Add Password"
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/etPasswordlogin"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/passwordlogin"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your password here"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/confirmpassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etPasswordlogin"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Confirm Password"
+    android:textColor="#231E32"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/etConfirmPassword"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/confirmpassword"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:drawableEnd="@drawable/passwordblock"
+    android:paddingRight="20dp"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your password here"
+    android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/button_sign_uplogin"
+        android:layout_width="362dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/apprectangle"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_sign_uplogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="or Sign up with" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/button_sign_uplogin"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/facebooklogo" />
+
+    <Button
+        android:id="@+id/googlelogin"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/button_sign_uplogin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@id/facebook"
+        android:background="@drawable/googlelogo" />
+
+</RelativeLayout>

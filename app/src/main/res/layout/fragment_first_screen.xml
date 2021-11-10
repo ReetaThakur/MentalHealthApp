@@ -46,12 +46,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_marginBottom="60dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginBottom="60dp"
             android:backgroundTint="#25A18E"
             android:text="Next"
+            android:background="@drawable/apprectangle"
             android:textAllCaps="false"
             android:textSize="14sp" />
     </RelativeLayout>

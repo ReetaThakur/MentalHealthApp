@@ -23,5 +23,14 @@ class OnBoardingBottomSheetFragmentEight : BottomSheetDialogFragment() {
         btn_Extremely8.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentEight_to_ninethScreen)
         }
+        btn_Considerably8.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentEight_to_ninethScreen)
+        }
+        btn_Slightly8.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentEight_to_ninethScreen)
+        }
+        btn_NotAtAll8.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentEight_to_ninethScreen)
+        }
     }
 }

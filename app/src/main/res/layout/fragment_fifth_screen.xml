@@ -35,25 +35,25 @@
 
         <Button
             android:id="@+id/btnNext5"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="#25A18E"
+            android:background="@drawable/buttonrectanglewhite"
             android:text="Yes"
             android:textAllCaps="false"
             android:textSize="14sp" />
         <Button
             android:id="@+id/btnNext51"
-            android:layout_width="wrap_content"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_weight="1"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="30dp"
-            android:backgroundTint="#25A18E"
+            android:background="#25A18E"
             android:text="No"
             android:textAllCaps="false"
             android:textSize="14sp" />

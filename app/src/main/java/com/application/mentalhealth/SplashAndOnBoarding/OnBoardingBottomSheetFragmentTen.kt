@@ -24,5 +24,17 @@ class OnBoardingBottomSheetFragmentTen : BottomSheetDialogFragment() {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
 
         }
+        btn_Considerably10.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+
+        }
+        btn_Slightly10.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+
+        }
+        btn_NotAtAll10.setOnClickListener {
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+
+        }
     }
 }

@@ -10,10 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
         <activity
-            android:name=".SimpleViews.ConnectorActivity"
-            android:exported="false" />
+            android:name=".SplashAndOnBoarding.login.extra.DummyActivity"
+            android:exported="true" />
         <activity
-            android:name=".CheckingActivity"
+            android:name=".SplashAndOnBoarding.login.extra.EmptyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashAndOnBoarding.login.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SimpleViews.ConnectorActivity"
             android:exported="false" />
         <activity
             android:name=".SimpleViews.SplashActivity"

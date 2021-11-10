@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmentlogin"
+    tools:context=".LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plants"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/appnamelogo"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="39dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+       android:layout_marginStart="100dp"
+        android:id="@+id/register"
+        android:layout_marginBottom="20dp"
+        android:text="Please Register "
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tabLayout"
+        android:scrollIndicators="bottom" />
+
+    <ImageView
+        android:id="@+id/plantabottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/plansbottom" />
+
+    <TextView
+        android:id="@+id/accountpresent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Already have an account?  Log-in " />
+
+    <TextView
+    android:id="@+id/username"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Username"
+        android:layout_below="@id/imageView"
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/etusername"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/username"
+    android:layout_margin="20dp"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rectangle"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter the user name"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/emailid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etusername"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Email id "
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/etemailid"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/emailid"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your email id here"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etemailid"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Add Password"
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/etPassword"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/password"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your password here"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/confirmpassword"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/etPassword"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="20dp"
+    android:text="Confirm Password"
+    android:textColor="#231E32"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+<EditText
+    android:id="@+id/etConfirmPassword"
+    android:layout_width="360dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/confirmpassword"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:background="@drawable/rectangle"
+    android:drawableEnd="@drawable/passwordblock"
+    android:paddingRight="20dp"
+    android:fontFamily="@font/nunito_extralight"
+    android:hint="Enter your password here"
+    android:paddingLeft="20dp" />
+
+    <Button
+        android:id="@+id/button_sign_up"
+        android:layout_width="362dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/etConfirmPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/apprectangle"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:text="or Sign up with" />
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/button_sign_up"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/facebooklogo" />
+
+<Button
+    android:layout_width="42dp"
+    android:layout_height="41dp"
+    android:id="@+id/google"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="30dp"
+    android:layout_toRightOf="@id/facebook"
+    android:background="@drawable/googlelogo"
+    android:layout_below="@id/button_sign_up" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/navHostFragment"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/imageView"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:navGraph="@navigation/navsignup" />-->
+
+
+</RelativeLayout>

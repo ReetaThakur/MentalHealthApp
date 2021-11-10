@@ -16,5 +16,6 @@ class SeventhScreen : Fragment(R.layout.fragment_seventh_screen) {
         btnNext7.setOnClickListener {
             findNavController().navigate(R.id.action_seventhScreen_to_eightScreen)
         }
+
     }
 }

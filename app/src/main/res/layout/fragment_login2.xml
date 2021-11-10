@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".SplashAndOnBoarding.login.LoginFragment2">
+
+<TextView
+    android:id="@+id/emailid"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:text="Email id"
+    android:textColor="#231E32"
+
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/loginemailid"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@id/emailid"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/rectangle"
+    android:hint="Enter your email id here"
+    android:paddingLeft="20dp" />
+
+<TextView
+    android:id="@+id/password"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/loginemailid"
+    android:layout_margin="20dp"
+    android:text="Password"
+    android:textColor="#231E32"
+    android:textStyle="bold" />
+
+<EditText
+    android:id="@+id/loginpassword"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_below="@id/password"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:background="@drawable/rectangle"
+    android:hint="Enter your password here"
+    android:paddingLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginpassword"
+        android:layout_marginLeft="20dp"
+        android:background="@android:color/transparent"
+        android:text="Forgot Password?"
+        android:textAllCaps="false"
+        android:textColor="#C55C1B"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/donthaveccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:text="Don`t have an Account ?"
+        android:textAllCaps="false"
+        android:textColor="#C55C1B"
+        android:textSize="12dp" />
+
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginpassword"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/apprectangle"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+<TextView
+    android:id="@+id/textView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/btnlogin"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="16dp"
+    android:text="or Login up with" />
+
+<Button
+    android:id="@+id/facebook"
+    android:layout_width="42dp"
+    android:layout_height="41dp"
+    android:layout_below="@id/btnlogin"
+    android:layout_marginStart="150dp"
+    android:layout_marginTop="40dp"
+    android:background="@drawable/facebooklogo" />
+
+    <Button
+        android:id="@+id/google"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@id/facebook"
+        android:background="@drawable/googlelogo" />
+
+</RelativeLayout>
