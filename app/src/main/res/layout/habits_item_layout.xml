@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_margin="10dp"
+
+    app:cardCornerRadius="8dp"
+    android:elevation="10dp"
+    android:layout_height="152dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="#A8D9D2"
+        android:backgroundTint="#A8D9D2"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Habit Name"
+            android:id="@+id/tvHabitName"
+            android:textSize="18sp"
+            android:fontFamily="@font/nunito_extralight"
+            android:textFontWeight="600"
+            android:textColor="@color/tab_indicator"
+            android:layout_marginTop="12dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="normal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Timing"
+            android:id="@+id/tvHabitTiming"
+            android:textSize="14sp"
+            android:fontFamily="@font/nunito_extralight"
+            android:textFontWeight="600"
+            android:textColor="@color/tab_indicator"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="12dp"
+            android:textStyle="normal"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mark"
+            android:layout_marginTop="13dp"
+            android:layout_marginStart="13dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/sunday"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/monday"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tuesday"
+                android:layout_marginStart="8dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/wednesday"
+                android:layout_marginStart="8dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/tuesday"
+                android:layout_marginStart="8dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/friday"
+                android:layout_marginStart="8dp" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sunday"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

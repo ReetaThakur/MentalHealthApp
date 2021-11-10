@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <item android:icon="@drawable/ic_home"
+    <item android:icon="@drawable/leftfragment"
         android:id="@+id/home"
         android:title=""/>
 
@@ -13,7 +13,7 @@
         android:id="@+id/placeHolder2"
         android:title=""/>
 
-    <item android:icon="@drawable/ic_msg"
+    <item android:icon="@drawable/rightfragment"
         android:id="@+id/msg"
         android:title="" />
 

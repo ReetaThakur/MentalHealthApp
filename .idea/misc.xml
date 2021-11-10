@@ -3,9 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/roundbutton.xml" value="0.215625" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout-v28/activity_home.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/add_habits_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_my_habits.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_today_habit.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/habit_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/habits_item_layout.xml" value="0.19947916666666668" />
         <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.19947916666666668" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/menu/top_navigation_bar.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/menu/top_navigation_bar.xml" value="0.5" />
       </map>
     </option>
   </component>
