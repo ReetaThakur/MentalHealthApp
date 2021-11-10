@@ -10,8 +10,11 @@ import kotlinx.android.synthetic.main.fragment_eight_screen.*
 class EightScreen : Fragment(R.layout.fragment_eight_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btnNext8.setOnClickListener {
+        btnNext81.setOnClickListener {
             findNavController().navigate(R.id.action_eightScreen_to_onBoardingBottomSheetFragmentEight)
+        }
+        btnNext8.setOnClickListener {
+            findNavController().navigate(R.id.action_eightScreen_to_ninethScreen)
         }
     }
 }

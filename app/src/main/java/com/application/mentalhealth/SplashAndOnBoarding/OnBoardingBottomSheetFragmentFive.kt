@@ -24,7 +24,6 @@ class OnBoardingBottomSheetFragmentFive : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
             btn_Extremely5.setOnClickListener {
                 findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentFive_to_sixthScreen)
-
         }
     }
 }

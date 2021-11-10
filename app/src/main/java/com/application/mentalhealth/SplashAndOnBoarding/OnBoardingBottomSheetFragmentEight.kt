@@ -22,7 +22,6 @@ class OnBoardingBottomSheetFragmentEight : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         btn_Extremely8.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentEight_to_ninethScreen)
-
         }
     }
 }

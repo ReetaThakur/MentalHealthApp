@@ -10,9 +10,11 @@ import kotlinx.android.synthetic.main.fragment_fifth_screen.*
 class FifthScreen : Fragment(R.layout.fragment_fifth_screen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        btnNext5.setOnClickListener {
+        btnNext51.setOnClickListener {
             findNavController().navigate(R.id.action_fifthScreen_to_onBoardingBottomSheetFragmentFive)
+        }
+        btnNext5.setOnClickListener {
+            findNavController().navigate(R.id.action_fifthScreen_to_sixthScreen)
         }
     }
 }
