@@ -12,8 +12,11 @@ class TenthScreen : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        btnNext10.setOnClickListener {
+        btnNext101.setOnClickListener {
             findNavController().navigate(R.id.action_tenthScreen_to_onBoardingBottomSheetFragmentTen)
+        }
+        btnNext10.setOnClickListener {
+            findNavController().navigate(R.id.action_tenthScreen_to_connectorActivity)
         }
     }
     private fun onBoardingFinished(){
