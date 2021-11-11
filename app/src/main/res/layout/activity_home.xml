@@ -93,7 +93,7 @@
             app:layout_constraintTop_toBottomOf="@+id/tvNoOfDays" />
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_inside_button"
@@ -105,6 +105,9 @@
             android:fontFamily="@font/nunito_extralight"
             android:background="@drawable/roundbutton"
             android:textAlignment="viewStart"
+            android:paddingLeft="20dp"
+            android:drawableEnd="@drawable/refreshbutton"
+            android:paddingRight="20dp"
             app:circularflow_radiusInDP="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvUserName"
