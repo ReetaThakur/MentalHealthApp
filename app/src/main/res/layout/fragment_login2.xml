@@ -74,7 +74,7 @@ tools:context=".SplashAndOnBoarding.login.LoginFragment2">
         android:textSize="12dp" />
 
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnlogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -96,16 +96,16 @@ tools:context=".SplashAndOnBoarding.login.LoginFragment2">
     android:layout_marginTop="16dp"
     android:text="or Login up with" />
 
-<Button
-    android:id="@+id/facebook"
-    android:layout_width="42dp"
-    android:layout_height="41dp"
-    android:layout_below="@id/btnlogin"
-    android:layout_marginStart="150dp"
-    android:layout_marginTop="40dp"
-    android:background="@drawable/facebooklogo" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/facebook"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/btnlogin"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/facebooklogo" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/google"
         android:layout_width="42dp"
         android:layout_height="41dp"

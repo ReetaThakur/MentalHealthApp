@@ -5,9 +5,7 @@ import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.Handler
-import android.view.LayoutInflater
-import android.view.MenuItem
-import android.view.View
+import android.view.*
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
@@ -37,6 +35,7 @@ class HomeActivity : AppCompatActivity() {
     var j = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.activity_home)
 
         bottomNavigationView.background = null
@@ -52,6 +51,11 @@ class HomeActivity : AppCompatActivity() {
         selectTabLayout()
 
 
+        ivmenu.setOnClickListener {
+            drawerLayout.openDrawer(navigationView)
+        }
+
+
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> setupBottomNavigationBar()
@@ -65,7 +69,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupBottomNavigationBar() {
-       val intent : Intent = Intent(this,DiscoverActivity::class.java)
+        val intent: Intent = Intent(this, DiscoverActivity::class.java)
         startActivity(intent)
     }
 
