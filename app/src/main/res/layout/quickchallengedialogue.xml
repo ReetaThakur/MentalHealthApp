@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Your Mini Habit Challenge is..."
+        android:textColor="#073B4C"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/challenge1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Drop everything you’re doing and take  \n        a 5 minute walk in your space,\n               wherever you are."
+        android:textColor="#073B4C" />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/challenge2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Call a close friend or family and tell \n    them how much you miss them! Show \n          them some love and support."
+        android:textColor="#073B4C"
+        android:visibility="invisible" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acceptButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_below="@id/challenge2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundbutton"
+            android:backgroundTint="#A8D9D2"
+            android:text="I Accept the Challenge"
+            android:textAllCaps="false"
+            android:textColor="#396270" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/declineButton"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/acceptButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#D1A99B"
+        android:text="I Decline the Challenge"
+        android:textAllCaps="false"
+        android:textColor="#8B2804" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/anotherchallenge"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/declineButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/roundbutton"
+        android:backgroundTint="#F4F3F4"
+        android:text="Give me another Challenege "
+        android:textAllCaps="false"
+        android:textColor="#A7A5AD" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
