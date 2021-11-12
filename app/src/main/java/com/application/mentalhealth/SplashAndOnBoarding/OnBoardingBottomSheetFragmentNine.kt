@@ -7,9 +7,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.application.mentalhealth.R
+import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import kotlinx.android.synthetic.main.fragment_on_boarding_bottom_sheet_nine.*
 
-class OnBoardingBottomSheetFragmentNine : Fragment() {
+class OnBoardingBottomSheetFragmentNine : BottomSheetDialogFragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

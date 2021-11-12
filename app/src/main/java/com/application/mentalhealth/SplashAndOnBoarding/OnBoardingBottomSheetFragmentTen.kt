@@ -24,7 +24,6 @@ class OnBoardingBottomSheetFragmentTen : BottomSheetDialogFragment() {
         super.onViewCreated(view, savedInstanceState)
         btn_Extremely10.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
-
         }
         btn_Considerably10.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
