@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.539" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/setreminder"
         android:layout_width="300dp"
         android:layout_height="40dp"

@@ -228,5 +228,14 @@
         android:id="@+id/fourteenScreen"
         android:name="com.application.mentalhealth.SplashAndOnBoarding.FourteenScreen"
         android:label="fragment_fourteen_screen"
-        tools:layout="@layout/fragment_fourteen_screen" />
+        tools:layout="@layout/fragment_fourteen_screen" >
+        <action
+            android:id="@+id/action_fourteenScreen_to_homeActivity"
+            app:destination="@id/homeActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.application.mentalhealth.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
 </navigation>

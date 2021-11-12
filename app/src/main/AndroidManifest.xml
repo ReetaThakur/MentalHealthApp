@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mentalhealth">
+    package="com.application.mentalhealth">
 
     <application
         android:allowBackup="true"
@@ -9,24 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
-        <activity
-            android:name=".SplashAndOnBoarding.login.extra.DummyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SplashAndOnBoarding.login.extra.EmptyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".SplashAndOnBoarding.login.LoginActivity"
-            android:exported="true" />
+
         <activity
             android:name=".SimpleViews.ConnectorActivity"
             android:exported="false" />
         <activity
-            android:name=".SimpleViews.SplashActivity"
-            android:name=".justforPractice.PracticeActivity"
+            android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".HomeActivity"
+            android:name=".SimpleViews.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
