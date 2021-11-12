@@ -1,21 +1,11 @@
-package com.application.justforPractice;
+package com.application.mentalhealth.justforPractice;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.viewpager.widget.ViewPager;
 
-import android.app.Dialog;
-import android.app.TimePickerDialog;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.widget.TextView;
-import android.widget.TimePicker;
 
 import com.application.mentalhealth.R;
-import com.google.android.material.tabs.TabLayout;
-
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 public class PracticeActivity extends AppCompatActivity {
 

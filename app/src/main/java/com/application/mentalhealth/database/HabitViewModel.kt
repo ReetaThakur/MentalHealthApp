@@ -1,10 +1,9 @@
-package com.database
+package com.application.mentalhealth.database
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import androidx.room.Room
-import com.application.dataClasses.AddHabitItems
+import com.application.mentalhealth.dataClasses.AddHabitItems
 
 class HabitViewModel(app:Application):AndroidViewModel(app) {
 

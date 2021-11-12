@@ -1,4 +1,4 @@
-package com.application.fragments
+package com.application.mentalhealth.fragments
 
 import android.app.Dialog
 import android.app.TimePickerDialog
@@ -11,16 +11,13 @@ import android.view.View
 import android.widget.*
 import androidx.appcompat.widget.AppCompatButton
 import androidx.lifecycle.ViewModelProviders
-import androidx.lifecycle.observe
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.application.adapters.AddHabitAdapter
-import com.application.dataClasses.AddHabitItems
+import com.application.mentalhealth.adapters.AddHabitAdapter
+import com.application.mentalhealth.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
-import com.database.HabitViewModel
+import com.application.mentalhealth.database.HabitViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import kotlinx.android.synthetic.main.choose_habit_layout.*
-import kotlinx.android.synthetic.main.dialogbox_create_habits_layout.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

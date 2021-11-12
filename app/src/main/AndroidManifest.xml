@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
         <activity
-            android:name="com.application.justforPractice.PracticeActivity"
+            android:name=".justforPractice.PracticeActivity"
             android:exported="true" />
         <activity
             android:name=".HomeActivity"
@@ -25,7 +25,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-        <receiver android:name="com.application.broadcastReceiver.AlarmReceiver"/>
+        <receiver android:name="com.application.mentalhealth.broadcastReceiver.AlarmReceiver"/>
     </application>
 
 </manifest>

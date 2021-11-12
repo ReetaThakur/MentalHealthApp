@@ -1,12 +1,12 @@
-package com.application.justforPractice;
+package com.application.mentalhealth.justforPractice;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 
-import com.application.fragments.MyHabitsFragment;
-import com.application.fragments.TodayGoalsFragment;
+import com.application.mentalhealth.fragments.MyHabitsFragment;
+import com.application.mentalhealth.fragments.TodayGoalsFragment;
 
 public class PracticePager extends FragmentPagerAdapter {
 
