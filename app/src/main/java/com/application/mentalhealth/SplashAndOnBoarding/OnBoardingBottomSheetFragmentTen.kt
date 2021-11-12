@@ -23,9 +23,7 @@ class OnBoardingBottomSheetFragmentTen : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btn_Extremely10.setOnClickListener {
-           // findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
-            val intent = Intent(context, ConnectorActivity::class.java)
-            startActivity(intent)
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
         }
         btn_Considerably10.setOnClickListener {
             findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
