@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashAndOnBoarding.TwelveScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="Similar questions would be \n    available for you once \n everyday. Would you like to \n    be reminded about them?"
+        android:textColor="#231E32"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/setreminder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.539" />
+
+    <Button
+        android:id="@+id/setreminder"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="256dp"
+        android:background="@drawable/rectangle"
+        android:backgroundTint="#25A18E"
+        android:text="Set a reminder"
+        android:textAllCaps="false"
+        android:textColor="#D3ECE8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="May be later"
+        android:id="@+id/maybelater"
+        android:textColor="#D17D49"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setreminder" />
+</androidx.constraintlayout.widget.ConstraintLayout>

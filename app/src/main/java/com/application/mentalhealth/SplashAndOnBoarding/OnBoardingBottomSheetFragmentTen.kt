@@ -23,20 +23,19 @@ class OnBoardingBottomSheetFragmentTen : BottomSheetDialogFragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btn_Extremely10.setOnClickListener {
-           // findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
-            val intent = Intent(context, ConnectorActivity::class.java)
-            startActivity(intent)
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
+
         }
         btn_Considerably10.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
 
         }
         btn_Slightly10.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
 
         }
         btn_NotAtAll10.setOnClickListener {
-            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_connectorActivity)
+            findNavController().navigate(R.id.action_onBoardingBottomSheetFragmentTen_to_elvenScreeem)
 
         }
     }

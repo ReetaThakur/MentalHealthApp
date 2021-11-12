@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashAndOnBoarding.ElvenScreen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/nunito_extralight"
+        android:text="How do you feel in this moment?" />
+
+    <ImageView
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="30dp"
+        android:id="@+id/happy"
+        android:src="@drawable/happy" />
+
+    <TextView
+        android:id="@+id/clickhappy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="170dp"
+        android:layout_toRightOf="@id/happy"
+        android:text="Happy"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/Veryhappy"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/happy"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/veryhappy" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Very Happy"
+        android:layout_toRightOf="@id/happy"
+        android:layout_marginTop="40dp"
+        android:id="@+id/clickveryhappy"
+        android:layout_below="@id/happy"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:id="@+id/Moderate"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/Veryhappy"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/moderate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Moderate"
+        android:layout_toRightOf="@id/happy"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Veryhappy"
+        android:id="@+id/clickmoderate"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/Sad"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/Moderate"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/sad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Sad"
+        android:layout_toRightOf="@id/happy"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Moderate"
+        android:id="@+id/clicksad"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/VerySad"
+        android:layout_width="77dp"
+        android:layout_height="62dp"
+        android:layout_below="@id/Sad"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/verysad" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Very Sad"
+        android:layout_toRightOf="@id/happy"
+        android:layout_marginTop="40dp"
+        android:layout_below="@id/Sad"
+        android:id="@+id/clickverySad"
+        android:layout_marginStart="30dp"
+        android:textSize="20dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

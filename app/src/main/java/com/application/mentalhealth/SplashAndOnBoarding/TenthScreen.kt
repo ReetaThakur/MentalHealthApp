@@ -17,13 +17,10 @@ class TenthScreen : Fragment(R.layout.fragment_tenth_screen) {
         super.onViewCreated(view, savedInstanceState)
         btnNext101.setOnClickListener {
             findNavController().navigate(R.id.action_tenthScreen_to_onBoardingBottomSheetFragmentTen)
-//            val intent = Intent(context, ConnectorActivity::class.java)
-//            startActivity(intent)
+
         }
         btnNext10.setOnClickListener {
-            findNavController().navigate(R.id.action_tenthScreen_to_connectorActivity)
-//            val intent = Intent(context, ConnectorActivity::class.java)
-//            startActivity(intent)
+            findNavController().navigate(R.id.action_tenthScreen_to_elvenScreeem)
         }
     }
     private fun onBoardingFinished(){
