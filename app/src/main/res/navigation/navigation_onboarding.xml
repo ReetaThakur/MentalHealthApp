@@ -113,6 +113,9 @@
         <action
             android:id="@+id/action_ninethScreen_to_onBoardingBottomSheetFragmentNine"
             app:destination="@id/onBoardingBottomSheetFragmentNine" />
+        <action
+            android:id="@+id/action_ninethScreen_to_connectorActivity"
+            app:destination="@id/connectorActivity" />
     </fragment>
     <fragment
         android:id="@+id/tenthScreen"
