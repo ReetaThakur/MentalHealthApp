@@ -12,4 +12,6 @@
     <color name="tab_text_color">#A7A5AD</color>
     <color name="tab_indicator">#396270</color>
     <color name="mini_habits">#073B4C</color>
+    <color name="cardColor">#E8BEA4</color>
+    <color name="cardSecondColor">#B0DADF</color>
 </resources>

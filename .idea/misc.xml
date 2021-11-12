@@ -3,6 +3,26 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/circle_default.xml" value="0.1675925925925926" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/create_habit_button.xml" value="0.2123076923076923" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/dialoag_button.xml" value="0.2123076923076923" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/roundbutton.xml" value="0.215625" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/save_habit_button.xml" value="0.215625" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout-v28/activity_home.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_create_habit.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_practice.xml" value="0.25" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/add_habits_layout.xml" value="0.33" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/choose_habit_layout.xml" value="0.21" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/dialogbox_create_habits_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_create_habit.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_my_habits.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_today_habit.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/habit_layout.xml" value="0.16" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/habits_item_layout.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.19947916666666668" />
+        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/menu/top_navigation_bar.xml" value="0.5" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/acceptrectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/apprectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/buttonrectanglewhite.xml" value="0.26614583333333336" />
