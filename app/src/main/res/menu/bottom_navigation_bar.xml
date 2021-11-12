@@ -3,7 +3,7 @@
 
     <item android:icon="@drawable/leftfragment"
         android:id="@+id/home"
-        android:title=""/>
+        android:title="Discover "/>
 
     <item
         android:id="@+id/placeHolder1"
@@ -15,7 +15,7 @@
 
     <item android:icon="@drawable/rightfragment"
         android:id="@+id/msg"
-        android:title="" />
+        android:title="chat" />
 
 
 </menu>

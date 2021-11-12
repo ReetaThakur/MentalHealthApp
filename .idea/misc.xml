@@ -12,16 +12,21 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/acceptrectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/apprectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/buttonrectanglewhite.xml" value="0.26614583333333336" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/leftfragment.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/rectangle.xml" value="0.262037037037037" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/selfcare.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/font/nunito_extralight.xml" value="0.28020833333333334" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/acceptchallengedialgoue.xml" value="0.16847826086956522" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.15942028985507245" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_discover.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_dummy.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.16847826086956522" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_login.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_all.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_discover2.xml" value="0.20833333333333334" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_dummy.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_eight_screen.xml" value="0.176" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_elven_screeem.xml" value="0.20833333333333334" />
@@ -35,8 +40,10 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_login2.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_login3.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_loginfragment2.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_meditate.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_nineth_screen.xml" value="0.18432971014492755" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_five.xml" value="0.24094202898550723" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_read.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_s_ign_upfragment2.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_second_screen.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_seventh_screen.xml" value="0.19067028985507245" />
@@ -44,10 +51,16 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_signin.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_signup2.xml" value="0.2359375" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_sixth_screen.xml" value="0.176" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_sleep.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_tenth_screen.xml" value="0.24094202898550723" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_third_screen.xml" value="0.1621376811594203" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_thirteen_screen.xml" value="0.264" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_twelve_screen.xml" value="0.264" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/meditatedialgoue.xml" value="0.264" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/sleepdialgoue.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/disovermenu.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/top_navigation_bar.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.26614583333333336" />
       </map>
     </option>

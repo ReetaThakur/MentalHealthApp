@@ -1,5 +1,6 @@
 package com.application.mentalhealth
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -7,11 +8,17 @@ import android.os.Handler
 import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
+import com.application.mentalhealth.SimpleViews.ConnectorActivity
+import com.application.mentalhealth.SimpleViews.DiscoverActivity
 import com.application.mentalhealth.adapters.PageAdapter
+
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
@@ -22,6 +29,7 @@ import kotlinx.android.synthetic.main.quickchallengedialogue.*
 import kotlinx.android.synthetic.main.quickchallengedialogue.view.*
 
 class HomeActivity : AppCompatActivity() {
+
 
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var pagerAdapter: PageAdapter
@@ -43,10 +51,22 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar?.title = "Nino"
         selectTabLayout()
 
+
+        bottomNavigationView.setOnNavigationItemSelectedListener {
+            when (it.itemId) {
+                R.id.home -> setupBottomNavigationBar()
+            }
+            true
+        }
         btnRefresh.setOnClickListener {
             challenge()
         }
 
+    }
+
+    private fun setupBottomNavigationBar() {
+       val intent : Intent = Intent(this,DiscoverActivity::class.java)
+        startActivity(intent)
     }
 
     private fun challenge() {
