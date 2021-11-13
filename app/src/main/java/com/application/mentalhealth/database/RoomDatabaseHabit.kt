@@ -1,10 +1,10 @@
-package com.application.mentalhealth.HomeFragment.database
+package com.application.mentalhealth.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.application.mentalhealth.HomeFragment.dataClasses.AddHabitItems
+import com.application.mentalhealth.dataClasses.AddHabitItems
 
 @Database(entities = [AddHabitItems::class],version = 2)
 abstract class RoomDatabaseHabit:RoomDatabase() {

@@ -1,4 +1,4 @@
-package com.application.mentalhealth.HomeFragment.adapters
+package com.application.mentalhealth.adapters
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

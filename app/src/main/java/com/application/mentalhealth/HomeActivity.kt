@@ -11,7 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
-import com.application.mentalhealth.HomeFragment.adapters.PageAdapter
+import com.application.mentalhealth.adapters.PageAdapter
 
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout

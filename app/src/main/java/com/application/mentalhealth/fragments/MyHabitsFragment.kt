@@ -10,13 +10,12 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.widget.*
 import androidx.appcompat.widget.AppCompatButton
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.application.mentalhealth.HomeFragment.adapters.AddHabitAdapter
-import com.application.mentalhealth.HomeFragment.dataClasses.AddHabitItems
+import com.application.mentalhealth.adapters.AddHabitAdapter
+import com.application.mentalhealth.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
-import com.application.mentalhealth.HomeFragment.database.HabitViewModel
+import com.application.mentalhealth.database.HabitViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

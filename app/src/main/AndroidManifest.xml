@@ -32,7 +32,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <receiver android:name="com.application.mentalhealth.HomeFragment.broadcastReceiver.AlarmReceiver" />
+        <receiver android:name="com.application.mentalhealth.broadcastReceiver.AlarmReceiver" />
     </application>
 
 </manifest>
