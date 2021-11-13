@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.application.mentalhealth.MyNursery.NurseryActivity
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
+import com.application.mentalhealth.SimpleViews.chatActivity
 import com.application.mentalhealth.adapters.PageAdapter
 
 import com.google.android.material.navigation.NavigationView
@@ -77,6 +78,7 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> setupBottomNavigationBar()
+                R.id.msg ->setChatPage()
             }
             true
         }
@@ -90,6 +92,11 @@ class HomeActivity : AppCompatActivity() {
             challengetext.visibility = View.INVISIBLE
         }
 
+    }
+
+    private fun setChatPage() {
+        val intent : Intent = Intent(this,chatActivity::class.java)
+        startActivity(intent)
     }
 
     private fun setupBottomNavigationBar() {
