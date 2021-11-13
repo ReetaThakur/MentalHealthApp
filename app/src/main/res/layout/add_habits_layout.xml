@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="160dp"
-    android:layout_margin="10dp"
+    android:layout_width="168dp"
     android:id="@+id/MyHabitcardView"
-    app:cardCornerRadius="18dp"
-    android:elevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
     android:layout_height="152dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 

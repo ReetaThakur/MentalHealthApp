@@ -8,43 +8,42 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.application.mentalhealth.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
+import com.application.mentalhealth.dataClasses.AddHabitItems
 
-class AddHabitAdapter(var habitList: ArrayList<AddHabitItems>):RecyclerView.Adapter<AddHabitAdapter.HabitViewHolder>() {
+class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>):RecyclerView.Adapter<TodaysGoalsAdapter.TodaysViewHolder>() {
 
 
     fun setListData(data:ArrayList<AddHabitItems>){
-        this.habitList=data
-    }
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): HabitViewHolder {
-        val view=LayoutInflater.from(parent.context).inflate(R.layout.add_habits_layout,parent,false)
-        return HabitViewHolder(view)
+        this.list=data
     }
 
-    override fun onBindViewHolder(holder: HabitViewHolder, position: Int) {
-       val newList=habitList[position]
-        holder.setData(newList)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodaysViewHolder {
+        val view=LayoutInflater.from(parent.context).inflate(R.layout.todays_goal_layout,parent,false)
+        return TodaysViewHolder(view)
+    }
+
+    override fun onBindViewHolder(holder: TodaysViewHolder, position: Int) {
+        var habitList=list[position]
+        holder.setData(habitList)
     }
 
     override fun getItemCount(): Int {
-        return habitList.size
+        return list.size
     }
 
-
-    inner class HabitViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
-        val habitName:TextView=itemView.findViewById(R.id.tvHabitName)
-        val habitTiming:TextView=itemView.findViewById(R.id.tvHabitTiming)
-        val cardView:CardView=itemView.findViewById(R.id.MyHabitcardView)
-        val image:ImageView=itemView.findViewById(R.id.imageView)
-
-        fun setData(habitItems: AddHabitItems){
-            habitName.text=habitItems.habitName
-            habitTiming.text=habitItems.habitTime
+    class TodaysViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
+        var habitName:TextView=itemView.findViewById(R.id.habitName)
+        var habitTime:TextView=itemView.findViewById(R.id.habitTime)
+        var cardView:CardView=itemView.findViewById(R.id.cardView)
+        var image:ImageView=itemView.findViewById(R.id.markerOfHabit)
+        fun setData(habit:AddHabitItems){
+            habitName.text=habit.habitName
+            habitTime.text=habit.habitTime
             if(adapterPosition==0 || adapterPosition%5==0){
                 cardView.setBackgroundColor(Color.parseColor("#E8BEA4"))
                 image.setColorFilter(Color.parseColor("#DC9D76"))
-            }else if (adapterPosition%2==0 || adapterPosition==7||adapterPosition==1) {
+            }else if (adapterPosition%2==0) {
                 cardView.setBackgroundColor(Color.parseColor("#A8D9D2"))
                 image.setColorFilter(Color.parseColor("#7CC7BB"))
             }else if (adapterPosition%3==0){
@@ -58,5 +57,7 @@ class AddHabitAdapter(var habitList: ArrayList<AddHabitItems>):RecyclerView.Adap
                 image.setColorFilter(Color.parseColor("#B97E68"))
             }
         }
+
     }
+
 }

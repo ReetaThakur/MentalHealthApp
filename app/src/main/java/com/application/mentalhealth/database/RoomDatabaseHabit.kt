@@ -6,7 +6,7 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 import com.application.mentalhealth.dataClasses.AddHabitItems
 
-@Database(entities = [AddHabitItems::class],version = 2)
+@Database(entities = [AddHabitItems::class],version = 3)
 abstract class RoomDatabaseHabit:RoomDatabase() {
 
     abstract fun getDao(): HabitDao

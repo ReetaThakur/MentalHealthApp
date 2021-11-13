@@ -16,5 +16,16 @@
     <color name="cyan">#C4C4C4</color>
     <color name="dark_blue_grey">#0E2751</color>
 
+    <color name="readPageHabit">#E8BEA4</color>
+    <color name="readCategory">#DC9D76</color>
+    <color name="cardThirthColor">#A8D9D2</color>
+    <color name="thirdColorCaterory">#7CC7BB</color>
+    <color name="fourthCard">#9CB1B7</color>
+    <color name="fourthCardCategory">#6A8994</color>
     <color name="cardSecondColor">#B0DADF</color>
+    <color name="secondCategory">#88C7CE</color>
+    <color name="fifthColor">#A8D9D2</color>
+    <color name="fifthColorCategory">#7CC7BB</color>
+    <color name="otherCard">#D1A99B</color>
+    <color name="otherCategory">#B97E68</color>
 </resources>
