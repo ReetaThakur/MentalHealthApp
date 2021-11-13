@@ -13,9 +13,19 @@
         android:layout_height="match_parent">
 
         <ImageView
+            android:id="@+id/nurseryclick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gem"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/ivmenu"
             android:layout_width="35dp"
             android:layout_height="33dp"
-            android:id="@+id/ivmenu"
             android:layout_marginStart="16dp"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_baseline_menu_24"
@@ -70,7 +80,7 @@
             android:id="@+id/imFullCircle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="72dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/ic_fullcircle"
             app:layout_constraintEnd_toEndOf="parent"
@@ -79,7 +89,7 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="72dp"
             android:layout_marginEnd="16dp"
             android:src="@drawable/ic_halfcircle"
             app:layout_constraintEnd_toEndOf="parent"
@@ -139,9 +149,9 @@
             app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/refresh"
             android:layout_width="43dp"
             android:layout_height="34dp"
-            android:id="@+id/refresh"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="32dp"
             android:background="@drawable/refreshbutton"
@@ -210,7 +220,6 @@
             android:src="@drawable/leaves_for_home_page"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

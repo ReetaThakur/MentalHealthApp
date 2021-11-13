@@ -1,53 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:animateLayoutChanges="true">
-    <LinearLayout
+
+    <RelativeLayout
         android:id="@+id/myNurseryFirstLinearLayout"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
         <ImageView
             android:id="@+id/btn_Back_MyNursery"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_back"
-            android:layout_height="wrap_content"/>
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_back" />
+
         <TextView
             android:layout_width="wrap_content"
-            android:textSize="24sp"
-            android:textColor="@color/black"
             android:layout_height="wrap_content"
-            android:text="My Nursery" />
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/btn_Back_MyNursery"
+            android:text="My Nursery"
+            android:textColor="@color/black"
+            android:textSize="24sp" />
+
         <ImageView
             android:id="@+id/btn_Question_MyNursery"
             android:layout_width="wrap_content"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_question"
-            android:layout_marginStart="150dp"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
-    <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="7dp"
+            android:src="@drawable/ic_question" />
+    </RelativeLayout>
+
+    <RelativeLayout
         android:id="@+id/myNurserySecondLinearLayout"
-        android:layout_below="@id/myNurseryFirstLinearLayout"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_below="@id/myNurseryFirstLinearLayout"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
         <ImageView
             android:id="@+id/btn_Rectangle1_MyNursery"
-            android:layout_width="50dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_gravity="center"
-            android:src="@drawable/ic_rectangle1"
-            android:layout_height="50dp"/>
-        <ImageView
+            android:src="@drawable/gem" />
+
+
+        <ProgressBar
+            android:id="@+id/nruseryprogressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_height="2dp"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="25dp"
+            android:background="#E8D4CD"
+            android:progressTint="#AF5327"
+            android:scaleY="4" />
+
+        <TextView
             android:layout_width="wrap_content"
-            android:layout_marginStart="-8dp"
-            android:layout_gravity="center"
-            android:src="@drawable/ic_rectangle2"
-            android:layout_height="wrap_content"/>
-    </LinearLayout>
+            android:text="Level 1"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/nruseryprogressbar"
+            android:layout_toEndOf="@id/btn_Rectangle1_MyNursery"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="3"
+            android:id="@+id/xpvalue"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/nruseryprogressbar"
+            android:layout_toEndOf="@id/nruseryprogressbar"
+            android:layout_marginLeft="-60dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:text=" /10  XP"
+            android:id="@+id/stagnent"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/nruseryprogressbar"
+            android:layout_toEndOf="@id/xpvalue"
+            android:layout_marginStart="1dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/btnShare_MyNursery"
@@ -58,13 +103,15 @@
         android:layout_marginEnd="20dp"
         android:padding="5dp"
         android:src="@drawable/ic_share" />
+
     <ImageView
         android:id="@+id/btn_Back_MyNursery_Pager"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginStart="10dp"
-        android:src="@drawable/ic_back"/>
+        android:src="@drawable/ic_back" />
+
     <ImageView
         android:id="@+id/btn_Forward_MyNursery_Pager"
         android:layout_width="wrap_content"
@@ -72,20 +119,20 @@
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="10dp"
-        android:src="@drawable/ic_forward"/>
+        android:src="@drawable/ic_forward" />
 
     <RelativeLayout
-        android:layout_below="@id/myNurserySecondLinearLayout"
         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/myNurserySecondLinearLayout"
         android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        android:layout_height="match_parent">
+        android:layout_marginEnd="30dp">
 
         <ImageView
             android:id="@+id/iv_GifView"
             android:layout_width="270dp"
-            android:layout_centerHorizontal="true"
-            android:layout_height="250dp" />
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true" />
 
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPager"

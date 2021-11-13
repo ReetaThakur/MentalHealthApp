@@ -1,6 +1,7 @@
 package com.application.mentalhealth
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -10,6 +11,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
+import com.application.mentalhealth.MyNursery.NurseryActivity
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
 import com.application.mentalhealth.adapters.PageAdapter
 
@@ -27,7 +29,8 @@ class HomeActivity : AppCompatActivity() {
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var pagerAdapter: PageAdapter
     var i = 1
-    var j = 0
+    var j = 3
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
@@ -50,12 +53,19 @@ class HomeActivity : AppCompatActivity() {
         tvUserName.setText(customername)
 
 
+
+
+        nurseryclick.setOnClickListener {
+            val intent: Intent = Intent(this, NurseryActivity::class.java)
+            startActivity(intent)
+        }
+
         ivmenu.setOnClickListener {
             drawerLayout.openDrawer(navigationView)
         }
 
         navigationView.setNavigationItemSelectedListener {
-            when(it.itemId){
+            when (it.itemId) {
                 R.id.myProfle -> {
                     val intent: Intent = Intent(this, DiscoverActivity::class.java)
                     startActivity(intent)
@@ -153,7 +163,12 @@ class HomeActivity : AppCompatActivity() {
             cDialog.challengeaccepted2.visibility = View.INVISIBLE
             cDialog.textaccepted.visibility = View.INVISIBLE
             cDialog.congrats.visibility = View.VISIBLE
+            val sharedPreferencesprogressbar: SharedPreferences =
+                getSharedPreferences("ProgressBar", MODE_PRIVATE)
+            val editor = sharedPreferencesprogressbar.edit()
 
+            editor.putInt("valueprogress", j)
+            editor.apply()
         }
 
         cDialog.ChallengeDone.setOnClickListener {

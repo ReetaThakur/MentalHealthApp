@@ -10,9 +10,9 @@ class NurseryActivity : AppCompatActivity(), CarouselPager.CarouselListener {
 
     private val carouselPages = listOf(
         CarouselPage(R.drawable.ic_zamia,R.string.title1, R.string.text1),
-        CarouselPage(R.drawable.ic_monstera,R.string.title1, R.string.text1),
-        CarouselPage(R.drawable.ic_agiaonema,R.string.title1, R.string.text1),
-        CarouselPage(R.drawable.ic_seed,R.string.title1, R.string.text1)
+        CarouselPage(R.drawable.ic_monstera,R.string.title2, R.string.text2),
+        CarouselPage(R.drawable.ic_agiaonema,R.string.title3, R.string.text3),
+        CarouselPage(R.drawable.ic_seed,R.string.title4, R.string.text4)
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
