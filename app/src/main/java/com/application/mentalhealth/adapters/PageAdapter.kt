@@ -6,7 +6,7 @@ import androidx.fragment.app.FragmentPagerAdapter
 import com.application.mentalhealth.fragments.MyHabitsFragment
 import com.application.mentalhealth.fragments.TodayGoalsFragment
 
-class PageAdapter(val fm:FragmentManager,var behavior:Int): FragmentPagerAdapter(fm,behavior) {
+class  PageAdapter(val fm:FragmentManager,var behavior:Int): FragmentPagerAdapter(fm,behavior) {
 
     var tabcount:Int=behavior
 
