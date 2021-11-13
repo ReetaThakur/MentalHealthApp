@@ -40,8 +40,10 @@
                         <TextView
                             android:textColor="@color/white"
                             android:textSize="22sp"
-                            android:layout_margin="10dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginStart="16dp"
                             android:letterSpacing="0.06"
+                            android:textAlignment="center"
                             android:layout_width="wrap_content"
                             android:text="Chat with Nino"
                             android:layout_height="wrap_content"/>
@@ -52,7 +54,7 @@
                             android:layout_marginStart="10dp"
                             android:letterSpacing="0.11"
                             android:textAlignment="center"
-                            android:text="Talk about your day or worries with an \nAI chatbot that is specialized with CBT\n and gives personalized responses after\n every use."
+                            android:text="Talk about your day or worries with an AI chat bot that is specialized with CBT and gives personalized responses after every use."
                             android:layout_height="wrap_content"/>
                     </LinearLayout>
                 </RelativeLayout>
@@ -78,8 +80,10 @@
                         <TextView
                             android:textColor="@color/white"
                             android:textSize="22sp"
-                            android:layout_margin="10dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginStart="16dp"
                             android:letterSpacing="0.06"
+                            android:textAlignment="center"
                             android:layout_width="wrap_content"
                             android:text="Connect with people"
                             android:layout_height="wrap_content"/>
@@ -116,8 +120,10 @@
                         <TextView
                             android:textColor="@color/white"
                             android:textSize="22sp"
-                            android:layout_margin="10dp"
+                            android:layout_marginTop="14dp"
+                            android:layout_marginStart="16dp"
                             android:letterSpacing="0.06"
+                            android:textAlignment="center"
                             android:layout_width="wrap_content"
                             android:text="Join sessions to vent"
                             android:layout_height="wrap_content"/>
