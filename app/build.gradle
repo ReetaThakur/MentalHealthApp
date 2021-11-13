@@ -55,6 +55,10 @@ dependencies {
     kapt("android.arch.persistence.room:compiler:1.1.1")
     implementation("androidx.room:room-ktx:2.3.0")
 
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+
     // ViewModel and LiveData
     implementation "androidx.lifecycle:lifecycle-extensions:$arch_version"
     implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$arch_version"
