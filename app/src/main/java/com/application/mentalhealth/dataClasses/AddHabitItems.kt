@@ -8,7 +8,6 @@ import androidx.room.PrimaryKey
 
 @Entity(tableName = "habitTable")
 data class AddHabitItems(@ColumnInfo(name = "habitName") var habitName:String,
-                         @ColumnInfo(name = "habitTime") var habitTime:String
-){
+                         @ColumnInfo(name = "habitTime") var habitTime:String){
     @PrimaryKey(autoGenerate = true) @ColumnInfo(name = "id") var id:Int?=null
 }

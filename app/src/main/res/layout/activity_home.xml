@@ -48,8 +48,8 @@
             android:id="@+id/tvGoodMorning"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/nunito_extralight"
             android:lineHeight="40.92dp"
             android:text="Good\nMorning,"
@@ -89,8 +89,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="72dp"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="19dp"
             android:src="@drawable/ic_halfcircle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -132,6 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/roundbutton"
+            android:drawableEnd="@drawable/refreshbutton"
             android:fontFamily="@font/nunito_extralight"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
@@ -222,6 +223,7 @@
             app:layout_constraintStart_toStartOf="parent" />
 
 
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -261,7 +263,6 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:importantForAutofill="auto"
-
             android:src="@drawable/ic_icon_name_leaves"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp" />

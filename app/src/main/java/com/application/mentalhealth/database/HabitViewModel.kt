@@ -2,6 +2,7 @@ package com.application.mentalhealth.database
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.application.mentalhealth.dataClasses.AddHabitItems
 
@@ -9,7 +10,7 @@ class HabitViewModel(app:Application):AndroidViewModel(app) {
 
     var allHabits:MutableLiveData<List<AddHabitItems>> = MutableLiveData()
 
-    fun getHabitsObserver():MutableLiveData<List<AddHabitItems>>{
+    fun getHabitsObserver(): LiveData<List<AddHabitItems>> {
         return allHabits
     }
 
@@ -24,4 +25,12 @@ class HabitViewModel(app:Application):AndroidViewModel(app) {
         val list=habitDao?.insertHabit(habitItems)
         getAllHabits()
     }
+
+    fun deleteHabitsInfo(habitItems: AddHabitItems){
+        val habitDao= RoomDatabaseHabit.getDatabaseObject((getApplication()))?.getDao()
+        habitDao?.deleteHabit(habitItems)
+        getAllHabits()
+    }
+
+
 }
