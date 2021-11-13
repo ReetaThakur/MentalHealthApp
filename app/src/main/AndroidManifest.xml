@@ -15,7 +15,7 @@
             android:name=".SimpleViews.MyProfile"
             android:exported="true" />
         <activity
-            android:name=".SimpleViews.chatActivity"
+            android:name=".SimpleViews.ChatActivity"
             android:exported="false" />
         <activity
             android:name=".MyNursery.NurseryActivity"
