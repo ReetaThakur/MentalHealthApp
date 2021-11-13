@@ -50,11 +50,24 @@ class HomeActivity : AppCompatActivity() {
         supportActionBar?.title = "Nino"
         selectTabLayout()
 
+        val sharedPreferences = getSharedPreferences("com.xyz.sharedpreferences", MODE_PRIVATE)
+        val customername = sharedPreferences.getString("CustomerName", "")
+        tvUserName.setText(customername)
+
 
         ivmenu.setOnClickListener {
             drawerLayout.openDrawer(navigationView)
         }
 
+        navigationView.setNavigationItemSelectedListener {
+            when(it.itemId){
+                R.id.myProfle -> {
+                    val intent: Intent = Intent(this, DiscoverActivity::class.java)
+                    startActivity(intent)
+                }
+            }
+            true
+        }
 
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
@@ -62,8 +75,14 @@ class HomeActivity : AppCompatActivity() {
             }
             true
         }
+
         btnRefresh.setOnClickListener {
             challenge()
+        }
+
+        refresh.setOnClickListener {
+            j = 0
+            challengetext.visibility = View.INVISIBLE
         }
 
     }

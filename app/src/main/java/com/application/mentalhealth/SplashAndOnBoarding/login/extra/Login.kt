@@ -1,6 +1,7 @@
 package com.application.mentalhealth.SplashAndOnBoarding.login.extra
 
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Log
@@ -23,11 +24,13 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.GoogleAuthProvider
 import kotlinx.android.synthetic.main.fragment_login.*
 import kotlinx.android.synthetic.main.fragment_signup2.*
+import android.content.Context.MODE_PRIVATE
 
 
 class Login : Fragment(R.layout.fragment_login) {
     companion object {
         private val RC_SIGN_IN = 120
+        private const val SHARED_PREFERENCE_KEY = "com.xyz.sharedpreferences"
     }
 
     private var mAuth = FirebaseAuth.getInstance()
@@ -40,9 +43,10 @@ class Login : Fragment(R.layout.fragment_login) {
         }
 
         accountpresent.setOnClickListener {
-            val fragmentTransaction : FragmentTransaction? = fragmentManager?.beginTransaction()
+            val fragmentTransaction: FragmentTransaction? = fragmentManager?.beginTransaction()
             val signin = Signin()
-            fragmentTransaction!!.replace(R.id.fragmentContainerView,signin,"signin").addToBackStack("signin").commit()
+            fragmentTransaction!!.replace(R.id.fragmentContainerView, signin, "signin")
+                .addToBackStack("signin").commit()
         }
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -69,7 +73,7 @@ class Login : Fragment(R.layout.fragment_login) {
         if (requestCode == RC_SIGN_IN) {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             val expection = task.exception
-            if(task.isSuccessful){
+            if (task.isSuccessful) {
 
                 try {
                     // Google Sign In was successful, authenticate with Firebase
@@ -80,7 +84,7 @@ class Login : Fragment(R.layout.fragment_login) {
                     // Google Sign In failed, update UI appropriately
                     Log.d(name, "Google sign in failed", e)
                 }
-            }else {
+            } else {
                 Log.d(name, "Google sign in failed", expection)
 
             }
@@ -90,11 +94,20 @@ class Login : Fragment(R.layout.fragment_login) {
     private fun firebaseAuthWithGoogle(idToken: String) {
         val credential = GoogleAuthProvider.getCredential(idToken, null)
         mAuth.signInWithCredential(credential)
-            .addOnCompleteListener{ task ->
+            .addOnCompleteListener { task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
                     Log.d(name, "signInWithCredential:success")
-                    Toast.makeText(activity, "Login Successful " + mAuth.currentUser!!.displayName, Toast.LENGTH_SHORT).show()
+                    Toast.makeText(activity,
+                        "Login Successful " + mAuth.currentUser!!.displayName,
+                        Toast.LENGTH_SHORT).show()
+
+                    val sharedPreferences: SharedPreferences =
+                        requireActivity().getSharedPreferences(SHARED_PREFERENCE_KEY, MODE_PRIVATE)
+                    val editor = sharedPreferences.edit()
+                    editor.putString("CustomerName", mAuth.currentUser!!.displayName)
+                    editor.apply()
+
                     Navigation.findNavController(requireView())
                         .navigate(R.id.action_login_to_fourthScreen3)
 
@@ -104,6 +117,7 @@ class Login : Fragment(R.layout.fragment_login) {
                 }
             }
     }
+
 
     private fun registerNewUser() {
 
@@ -148,7 +162,7 @@ class Login : Fragment(R.layout.fragment_login) {
                 } else {
                     Toast.makeText(
                         context,
-                        "Registration failed!!" + "inValid Credentials",
+                        "Registration failed!!" + "inValid Credentials" ,
                         Toast.LENGTH_LONG
                     ).show()
                 }

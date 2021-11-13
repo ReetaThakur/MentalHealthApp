@@ -18,6 +18,7 @@ import com.application.mentalhealth.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
 import com.application.mentalhealth.database.HabitViewModel
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import kotlinx.android.synthetic.main.choose_habit_layout.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
@@ -109,6 +110,10 @@ class MyHabitsFragment : Fragment(R.layout.fragment_my_habits), View.OnClickList
 
              //  habitList.add(AddHabitItems(habitName,habitTiming))
                habitAdapter.notifyDataSetChanged()
+               dialog.dismiss()
+           }
+
+           dialog.dialogclose.setOnClickListener {
                dialog.dismiss()
            }
 

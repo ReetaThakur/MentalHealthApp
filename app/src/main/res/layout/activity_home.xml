@@ -122,7 +122,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/roundbutton"
-            android:drawableEnd="@drawable/refreshbutton"
             android:fontFamily="@font/nunito_extralight"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"
@@ -138,6 +137,16 @@
             app:circularflow_radiusInDP="100dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvUserName" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="43dp"
+            android:layout_height="34dp"
+            android:id="@+id/refresh"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/refreshbutton"
+            app:layout_constraintEnd_toEndOf="@+id/btnRefresh"
+            app:layout_constraintTop_toTopOf="@+id/btnRefresh" />
 
         <TextView
             android:id="@+id/challengetext"
@@ -241,6 +250,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:importantForAutofill="auto"
+
             android:src="@drawable/ic_icon_name_leaves"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp" />

@@ -20,10 +20,13 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_discover.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_dummy.xml" value="0.25" />
-        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.264" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.2" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_login.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_my_profile.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/choose_habit_layout.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/dialogbox_create_habits_layout.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_all.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_blank.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_discover2.xml" value="0.20833333333333334" />
@@ -41,6 +44,7 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_login3.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_loginfragment2.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_meditate.xml" value="0.25" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_my_habits.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_nineth_screen.xml" value="0.18432971014492755" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_on_boarding_bottom_sheet_five.xml" value="0.24094202898550723" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/fragment_read.xml" value="0.25" />

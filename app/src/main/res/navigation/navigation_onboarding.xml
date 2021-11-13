@@ -238,4 +238,13 @@
         android:name="com.application.mentalhealth.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="com.application.mentalhealth.SplashAndOnBoarding.login.extra.LogInFragment"
+        android:label="fragment_log_in"
+        tools:layout="@layout/fragment_log_in" >
+        <action
+            android:id="@+id/action_logInFragment_to_fourthScreen"
+            app:destination="@id/fourthScreen" />
+    </fragment>
 </navigation>
