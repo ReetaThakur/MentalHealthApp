@@ -169,7 +169,10 @@ class MyHabitsFragment : Fragment(R.layout.fragment_my_habits), ClickListner {
 
             CoroutineScope(Dispatchers.IO).launch {
                 viewModel.deleteHabitsInfo(habitItems)
-//                habitAdapter.notifyDataSetChanged()
+                CoroutineScope(Dispatchers.Main).launch {
+                    habitAdapter.notifyDataSetChanged()
+                }
+
             }
 
 

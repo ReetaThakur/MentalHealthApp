@@ -61,10 +61,11 @@ class TodayGoalsFragment : Fragment(R.layout.fragment_today_habit),ClickListner 
 
             CoroutineScope(Dispatchers.IO).launch {
                 viewModel.deleteHabitsInfo(habitItems)
-//                habitAdapter.notifyDataSetChanged()
+                CoroutineScope(Dispatchers.Main).launch {
+                    todayAdapter.notifyDataSetChanged()
+                }
+
             }
-
-
         }
         builder?.setNegativeButton("No"
         ) { dialogInterface, i ->
