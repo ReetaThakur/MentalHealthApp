@@ -14,9 +14,9 @@
         <activity
             android:name=".SimpleViews.MyProfile"
             android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".SimpleViews.ChatActivity"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".SimpleViews.ChatActivity"
+            android:exported="false" />
         <activity
             android:name=".MyNursery.NurseryActivity"
             android:exported="false" />
@@ -30,7 +30,7 @@
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".SimpleViews.ChatActivity"
+            android:name=".SimpleViews.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

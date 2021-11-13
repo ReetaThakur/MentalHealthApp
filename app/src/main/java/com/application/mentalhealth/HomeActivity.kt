@@ -12,8 +12,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.application.mentalhealth.MyNursery.NurseryActivity
+import com.application.mentalhealth.SimpleViews.ChatActivity
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
-import com.application.mentalhealth.SimpleViews.chatActivity
+
 import com.application.mentalhealth.adapters.PageAdapter
 
 import com.google.android.material.navigation.NavigationView
@@ -95,7 +96,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setChatPage() {
-        val intent : Intent = Intent(this,chatActivity::class.java)
+        val intent : Intent = Intent(this,ChatActivity::class.java)
         startActivity(intent)
     }
 
