@@ -1,380 +1,435 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    app:cardCornerRadius="16dp"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal">
 
-
-            <LinearLayout
-                android:layout_width="match_parent"
+            <ImageView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/leaves_for_dialoagbox"/>
-              <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Create a Habit"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:textColor="@color/forAllTexts"
-                    android:textSize="24sp"
-                    android:layout_marginTop="14dp"
-                    android:textAlignment="center"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:layout_weight="1"/>
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/cancle"
-                    android:id="@+id/habitcreateCancle"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginEnd="10dp"
-                    />
-            </LinearLayout>
+                android:src="@drawable/leaves_for_dialoagbox" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Name your habit"
-                android:textSize="22sp"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="14dp"
+                android:layout_weight="1"
                 android:fontFamily="@font/nunito_extralight"
+                android:text="Create a Habit"
+                android:textAlignment="center"
+                android:textColor="@color/forAllTexts"
                 android:textFontWeight="600"
-                android:textStyle="bold"
-                android:layout_marginStart="18dp"/>
+                android:textSize="24sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/habitcreateCancle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/cancle" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="-30dp"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Name your habit"
+            android:textFontWeight="600"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
 
             <EditText
+                android:id="@+id/etEnterHabit"
                 android:layout_width="321dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="10dp"
                 android:background="@drawable/dialoag_button"
                 android:hint="Enter text here"
                 android:paddingStart="10dp"
-                android:id="@+id/etEnterHabit"
-                android:layout_marginEnd="10dp"
                 android:textAlignment="viewStart"
                 android:textAllCaps="false"
                 android:textColor="#25A18E"
                 android:textFontWeight="600"
-                android:textSize="14sp" />
-
-            <HorizontalScrollView
-                android:layout_width="wrap_content"
-                android:scrollbars="none"
-                android:layout_marginTop="-20dp"
-                android:layout_height="wrap_content">
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:orientation="horizontal">
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="wrap_content"
-                android:layout_height="24dp"
-                android:text="Morning walk"
-                android:layout_marginBottom="5dp"
-                android:textAllCaps="false"
-                android:background="@drawable/create_habit_button"
-                android:textSize="10sp"
-                android:fontFamily="@font/nunito_extralight"
-                android:textColor="#8B2804"
-                android:textAlignment="center"
-                android:layout_marginTop="30dp"
-                android:textStyle="bold"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="24dp"
-                        android:text="Screen time detox"
-                        android:padding="5dp"
-                        android:layout_marginStart="10dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/create_habit_button"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/nunito_extralight"
-                        android:textColor="#8B2804"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp"
-                        android:textStyle="bold"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="24dp"
-                        android:text="Exercise"
-                        android:padding="5dp"
-                        android:layout_marginStart="10dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/create_habit_button"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/nunito_extralight"
-                        android:textColor="#8B2804"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp"
-                        android:textStyle="bold"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="24dp"
-                        android:text="Read a page"
-                        android:padding="5dp"
-                        android:layout_marginStart="10dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/create_habit_button"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/nunito_extralight"
-                        android:textColor="#8B2804"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp"
-                        android:textStyle="bold"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="24dp"
-                        android:text="Meditation"
-                        android:padding="5dp"
-                        android:layout_marginStart="10dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/create_habit_button"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/nunito_extralight"
-                        android:textColor="#8B2804"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp"
-                        android:textStyle="bold"/>
-                    <androidx.appcompat.widget.AppCompatButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="24dp"
-                        android:text="Weekly Meets"
-                        android:padding="5dp"
-                        android:layout_marginEnd="14dp"
-                        android:layout_marginStart="10dp"
-                        android:textAllCaps="false"
-                        android:background="@drawable/create_habit_button"
-                        android:textSize="10sp"
-                        android:fontFamily="@font/nunito_extralight"
-                        android:textColor="#8B2804"
-                        android:textAlignment="center"
-                        android:layout_marginTop="30dp"
-                        android:textStyle="bold"/>
-                </LinearLayout>
-            </HorizontalScrollView>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Time:"
-                    android:textStyle="bold"
-                    android:textColor="@color/forAllTexts"
-                    android:textSize="18sp"
-                    android:layout_marginTop="17dp"
-                    android:layout_marginStart="18dp"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:textFontWeight="600"/>
-              <TextView
-                  android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                  android:text="08: 45 PM"
-                  android:textStyle="bold"
-                  android:textSize="22sp"
-                  android:id="@+id/setTime"
-                  android:textColor="@color/forAllTexts"
-                  android:layout_marginTop="17dp"
-                  android:layout_marginStart="130dp"/>
-
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Repeat every -"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:textAllCaps="false"
-                    android:textStyle="bold"
-                    android:textColor="@color/forAllTexts"
-                    android:textFontWeight="600"
-                    android:layout_marginStart="12dp"
-                    android:layout_marginTop="23dp"
-                    android:textSize="18dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Week"
-                    android:fontFamily="@font/nunito_extralight"
-                    android:textAllCaps="false"
-                    android:textStyle="bold"
-                    android:textColor="#4F4B5B"
-                    android:textFontWeight="600"
-                    android:layout_marginStart="42dp"
-                    android:layout_marginTop="23dp"
-                    android:textSize="18dp"/>
-            </LinearLayout>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_marginTop="15dp"
-                android:layout_marginStart="12dp"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:text="S"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="M"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="T"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="W"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="T"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="F"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="36dp"
-                    android:text="S"
-                    android:textStyle="normal"
-                    android:textFontWeight="600"
-                    android:textColor="#6A8994"
-                    android:textSize="22sp"/>
-            </LinearLayout>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="18dp"
-                android:text="Select a category:"
-                android:textStyle="bold"
-                android:textFontWeight="600"
-                android:textColor="@color/forAllTexts"
-                android:textSize="18sp"/>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:layout_marginStart="20dp"
-                android:orientation="vertical">
-                <RadioGroup
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:id="@+id/radioGroup"
-                    android:layout_gravity="center"
-                    android:orientation="vertical">
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:button="@drawable/circle_default"
-                        android:text="Default"
-                        android:id="@+id/radioButton1"
-                        android:layout_marginStart="-8dp"
-                        android:checked="false"
-                        android:textIsSelectable="true"
-                        android:paddingLeft="20dp"
-                        android:textColor="@drawable/text_color"
-                        android:textSize="18sp"/>
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:id="@+id/radioButton2"
-                        android:button="@drawable/selfcare"
-                        android:text="Self-care"
-                        android:textIsSelectable="true"
-                        android:outlineSpotShadowColor="@color/black"
-                        android:paddingLeft="20dp"
-                        android:textColor="@drawable/text_color"
-                        android:textSize="18sp"/>
-                    <RadioButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:button="@drawable/impotant"
-                        android:text="Impotant"
-                        android:id="@+id/radioButton3"
-                        android:textIsSelectable="true"
-                        android:outlineSpotShadowColor="@color/black"
-                        android:paddingLeft="20dp"
-                        android:textColor="@drawable/text_color"
-                        android:textSize="18sp"/>
-                </RadioGroup>
-            </LinearLayout>
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_width="331dp"
-                android:layout_height="45dp"
-                android:text="Save the Habit"
-                android:textStyle="bold"
-                android:id="@+id/btnSaveHabit"
-                android:textColor="@color/white"
-                android:textSize="22sp"
-                android:textAllCaps="false"
-                android:layout_marginTop="18dp"
-                android:layout_marginStart="12dp"
-                android:background="@drawable/save_habit_button"
-                android:textAlignment="center"
-                android:fontFamily="@font/nunito_extralight"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Delete the Habit"
-                android:id="@+id/deleteHabit"
                 android:textSize="14sp"
-                android:textColor="#C55C1B"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_marginStart="130dp"/>
+                android:layout_marginStart="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/tickhabit"
+                android:layout_width="22dp"
+                android:layout_height="19dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="30dp"
+                android:src="@drawable/tickhabit"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="@id/etEnterHabit"
+                app:layout_constraintTop_toTopOf="@id/etEnterHabit" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-20dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/mornigwalk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:text="Morning walk"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:id="@+id/screentimedetox"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:padding="5dp"
+                    android:text="Screen time detox"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:id="@+id/Exercise"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:padding="5dp"
+                    android:text="Exercise"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/readapage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:padding="5dp"
+                    android:text="Read a page"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:id="@+id/meditation"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:padding="5dp"
+                    android:text="Meditation"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/weeklymeets"
+                    android:layout_marginEnd="14dp"
+                    android:background="@drawable/create_habit_button"
+                    android:fontFamily="@font/nunito_extralight"
+                    android:padding="5dp"
+                    android:text="Weekly Meets"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#8B2804"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="17dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:text="Time:"
+                android:textColor="@color/forAllTexts"
+                android:textFontWeight="600"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/setTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="17dp"
+                android:text="08: 45 PM"
+                android:textColor="@color/forAllTexts"
+                android:textSize="22sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
-    </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:text="Repeat every -"
+                android:textAllCaps="false"
+                android:textColor="@color/forAllTexts"
+                android:textFontWeight="600"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/nunito_extralight"
+                android:text="Week"
+                android:textAllCaps="false"
+                android:textColor="#4F4B5B"
+                android:textFontWeight="600"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="S"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="M"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="T"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="W"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="T"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="F"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:text="S"
+                android:textColor="#6A8994"
+                android:textFontWeight="600"
+                android:textSize="22sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:text="Select a category:"
+            android:textColor="@color/forAllTexts"
+            android:textFontWeight="600"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-8dp"
+                    android:button="@drawable/circle_default"
+                    android:checked="false"
+                    android:paddingLeft="20dp"
+                    android:text="Default"
+                    android:textColor="@drawable/text_color"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/selfcare"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:text="Self-care"
+                    android:textColor="@drawable/text_color"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/impotant"
+                    android:outlineSpotShadowColor="@color/black"
+                    android:paddingLeft="20dp"
+                    android:text="Impotant"
+                    android:textColor="@drawable/text_color"
+                    android:textIsSelectable="true"
+                    android:textSize="18sp" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSaveHabit"
+            android:layout_width="331dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/save_habit_button"
+            android:fontFamily="@font/nunito_extralight"
+            android:text="Save the Habit"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/deleteHabit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Delete the Habit"
+            android:textColor="#C55C1B"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
 
