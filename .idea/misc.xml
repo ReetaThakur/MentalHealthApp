@@ -3,17 +3,6 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/ic_icon_name_leaves.xml" value="0.2037037037037037" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/drawable/text_color.xml" value="0.19074074074074074" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/acceptchallengedialgoue.xml" value="0.25" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/activity_home.xml" value="0.33" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/add_habits_layout.xml" value="0.5" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/choose_habit_layout.xml" value="0.25" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/dialogbox_create_habits_layout.xml" value="0.25" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_my_habits.xml" value="0.129981884057971" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/fragment_today_habit.xml" value="0.129981884057971" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/quickchallengedialogue.xml" value="0.18" />
-        <entry key="..\:/Users/Reeta Thakur/Desktop/Mental-health/app/src/main/res/layout/todays_goal_layout.xml" value="0.33" />
         <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_first_screen.xml" value="0.1334853090172239" />
         <entry key="..\:/Users/nc110/Desktop/Mental-health/app/src/main/res/layout/fragment_home.xml" value="0.1334853090172239" />
@@ -23,11 +12,13 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/acceptrectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/apprectangle.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/buttonrectanglewhite.xml" value="0.26614583333333336" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/ic_baseline_send_24.xml" value="0.26205128205128203" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/leftfragment.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/rectangle.xml" value="0.262037037037037" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/drawable/selfcare.xml" value="0.26614583333333336" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/font/nunito_extralight.xml" value="0.28020833333333334" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/acceptchallengedialgoue.xml" value="0.16847826086956522" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_bot.xml" value="0.19067028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_chat.xml" value="0.19067028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_connector.xml" value="0.15942028985507245" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_discover.xml" value="0.25" />
@@ -38,6 +29,7 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_my_profile.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_nursery.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/activity_splash.xml" value="0.15942028985507245" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/bot_msg_rvitem.xml" value="0.1" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/carousel_pager.xml" value="0.264" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/choose_habit_layout.xml" value="0.536" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/dialogbox_create_habits_layout.xml" value="0.25" />
@@ -79,6 +71,7 @@
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/meditatedialgoue.xml" value="0.264" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/sleepdialgoue.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/todays_goal_layout.xml" value="0.12708333333333333" />
+        <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/layout/user_msg_rvitem.xml" value="0.1" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/bottom_navigation_bar.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/disovermenu.xml" value="0.25" />
         <entry key="..\:/unit-3-Projects/Mental-health/app/src/main/res/menu/top_navigation_bar.xml" value="0.25" />

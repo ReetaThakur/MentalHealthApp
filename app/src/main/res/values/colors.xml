@@ -28,4 +28,9 @@
     <color name="fifthColorCategory">#7CC7BB</color>
     <color name="otherCard">#D1A99B</color>
     <color name="otherCategory">#B97E68</color>
+
+    <color name="back_color">#13253D</color>
+    <color name="bot_back_color">#283757</color>
+    <color name="use_back_color">#6965FF</color>
+    <color name="fab_color">#6B6AFF</color>
 </resources>

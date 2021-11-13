@@ -34,29 +34,33 @@
                         android:layout_alignParentEnd="true"
                         android:src="@drawable/ic_cwntwo"
                         android:layout_height="wrap_content"/>
+
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:orientation="vertical"
-                        android:layout_height="wrap_content">
+                        android:layout_height="wrap_content"
+                        android:id="@+id/llayout"
+                        android:orientation="vertical">
+
                         <TextView
-                            android:textColor="@color/white"
-                            android:textSize="22sp"
-                            android:layout_marginTop="14dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="16dp"
+                            android:layout_marginTop="14dp"
                             android:letterSpacing="0.06"
-                            android:textAlignment="center"
-                            android:layout_width="wrap_content"
                             android:text="Chat with Nino"
-                            android:layout_height="wrap_content"/>
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="22sp" />
+
                         <TextView
                             android:layout_width="wrap_content"
-                            android:textColor="@color/white"
-                            android:textSize="16sp"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
                             android:letterSpacing="0.11"
-                            android:textAlignment="center"
                             android:text="Talk about your day or worries with an AI chat bot that is specialized with CBT and gives personalized responses after every use."
-                            android:layout_height="wrap_content"/>
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
                     </LinearLayout>
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>

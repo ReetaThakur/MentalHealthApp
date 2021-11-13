@@ -89,8 +89,8 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="19dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="12dp"
             android:src="@drawable/ic_halfcircle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -132,7 +132,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:background="@drawable/roundbutton"
-            android:drawableEnd="@drawable/refreshbutton"
             android:fontFamily="@font/nunito_extralight"
             android:paddingLeft="20dp"
             android:paddingTop="10dp"

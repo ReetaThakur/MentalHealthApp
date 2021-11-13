@@ -69,7 +69,7 @@ class MyHabitsFragment : Fragment(R.layout.fragment_my_habits), ClickListner {
 
         recyclerView = view.findViewById(R.id.habitRecyclerView)
         habitList = ArrayList()
-        habitAdapter = AddHabitAdapter(habitList)
+        habitAdapter = AddHabitAdapter(habitList,this)
         recyclerView=view.findViewById(R.id.habitRecyclerView)
         habitList=ArrayList()
         habitAdapter=AddHabitAdapter(habitList,this)

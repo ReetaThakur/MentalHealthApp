@@ -9,8 +9,12 @@
         android:icon="@drawable/appnamelogo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
+        <activity
+            android:name=".botchat.BotActivity"
+            android:exported="true" />
         <activity
             android:name=".SimpleViews.MyProfile"
             android:exported="true" />
@@ -42,8 +46,6 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-<!--        <receiver android:name="com.application.mentalhealth.HomeFragment.broadcastReceiver.AlarmReceiver" />-->
     </application>
 
 </manifest>
