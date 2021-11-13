@@ -10,8 +10,9 @@ import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import com.application.mentalhealth.R
 import com.application.mentalhealth.dataClasses.AddHabitItems
+import com.application.mentalhealth.database.ClickListner
 
-class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>):RecyclerView.Adapter<TodaysGoalsAdapter.TodaysViewHolder>() {
+class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>,var listner: ClickListner):RecyclerView.Adapter<TodaysGoalsAdapter.TodaysViewHolder>() {
 
 
     fun setListData(data:ArrayList<AddHabitItems>){
@@ -20,7 +21,7 @@ class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>):RecyclerView.Adapter
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodaysViewHolder {
         val view=LayoutInflater.from(parent.context).inflate(R.layout.todays_goal_layout,parent,false)
-        return TodaysViewHolder(view)
+        return TodaysViewHolder(view,listner)
     }
 
     override fun onBindViewHolder(holder: TodaysViewHolder, position: Int) {
@@ -32,7 +33,7 @@ class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>):RecyclerView.Adapter
         return list.size
     }
 
-    class TodaysViewHolder(itemView:View):RecyclerView.ViewHolder(itemView){
+    class TodaysViewHolder(itemView:View,var listner: ClickListner):RecyclerView.ViewHolder(itemView){
         var habitName:TextView=itemView.findViewById(R.id.habitName)
         var habitTime:TextView=itemView.findViewById(R.id.habitTime)
         var cardView:CardView=itemView.findViewById(R.id.cardView)
@@ -55,6 +56,11 @@ class TodaysGoalsAdapter(var list:ArrayList<AddHabitItems>):RecyclerView.Adapter
             }else{
                 cardView.setBackgroundColor(Color.parseColor("#D1A99B"))
                 image.setColorFilter(Color.parseColor("#B97E68"))
+            }
+
+            cardView.setOnLongClickListener {
+                listner.deleteHabit(habit)
+                return@setOnLongClickListener true
             }
         }
 

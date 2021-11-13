@@ -221,7 +221,7 @@
             android:layout_height="wrap_content"
             android:backgroundTint="@color/white"
             android:importantForAutofill="auto"
-            android:src="@drawable/ic_icon_name_leaves"
+            android:src="@drawable/leaves"
             app:layout_anchor="@id/bottomAppBar"
             app:maxImageSize="40dp" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,8 +1,10 @@
 package com.application.mentalhealth.fragments
 
+import android.app.AlertDialog
 import android.app.Dialog
 import android.app.TimePickerDialog
 import android.app.TimePickerDialog.OnTimeSetListener
+import android.content.DialogInterface
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -16,6 +18,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.application.mentalhealth.adapters.AddHabitAdapter
 import com.application.mentalhealth.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
+import com.application.mentalhealth.database.ClickListner
 import com.application.mentalhealth.database.HabitViewModel
 import com.bumptech.glide.Glide
 import com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -27,7 +30,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class MyHabitsFragment : Fragment(R.layout.fragment_my_habits) {
+class MyHabitsFragment : Fragment(R.layout.fragment_my_habits), ClickListner {
 
     private lateinit var addButton:FloatingActionButton
     private lateinit var recyclerView:RecyclerView
@@ -64,7 +67,7 @@ class MyHabitsFragment : Fragment(R.layout.fragment_my_habits) {
 
         recyclerView=view.findViewById(R.id.habitRecyclerView)
         habitList=ArrayList()
-        habitAdapter=AddHabitAdapter(habitList)
+        habitAdapter=AddHabitAdapter(habitList,this)
 
         recyclerView.adapter=habitAdapter
         recyclerView.layoutManager=GridLayoutManager(context,2)
@@ -155,6 +158,28 @@ class MyHabitsFragment : Fragment(R.layout.fragment_my_habits) {
           timePickerDialog.show()
     }
 
+    override fun deleteHabit(habitItems: AddHabitItems) {
+
+        val builder = context?.let { androidx.appcompat.app.AlertDialog.Builder(it) }
+        builder?.setTitle("Delete")
+        builder?.setMessage("Do you really want to delete the habit ?")
+        builder?.setCancelable(false)
+        builder?.setPositiveButton("Yes"
+        ) { dialogInterface, i ->
+
+            CoroutineScope(Dispatchers.IO).launch {
+                viewModel.deleteHabitsInfo(habitItems)
+//                habitAdapter.notifyDataSetChanged()
+            }
+
+
+        }
+        builder?.setNegativeButton("No"
+        ) { dialogInterface, i ->
+            dialogInterface.dismiss()
+        }
+        builder?.create()?.show()
+    }
 
 
 }

@@ -1,6 +1,7 @@
 package com.application.mentalhealth.database
 
 import androidx.room.Dao
+import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
 import com.application.mentalhealth.dataClasses.AddHabitItems
@@ -14,4 +15,7 @@ interface HabitDao {
 
     @Insert
     fun insertHabit(habitItems: AddHabitItems?)
+
+    @Delete
+    fun deleteHabit(habitItems: AddHabitItems?)
 }

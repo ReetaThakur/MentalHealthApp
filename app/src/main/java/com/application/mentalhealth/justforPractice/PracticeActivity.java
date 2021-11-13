@@ -1,7 +1,9 @@
 package com.application.mentalhealth.justforPractice;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -32,5 +34,27 @@ public class PracticeActivity extends AppCompatActivity {
 //            }
 //        },hours,mins,false);
 
+    }
+
+    private void delete(){
+        AlertDialog.Builder builder=new AlertDialog.Builder(PracticeActivity.this);
+        builder.setTitle("Delete");
+        builder.setMessage("Do you really want to delete the habit ?");
+        builder.setCancelable(false);
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+
+                   // viewModel.deleteHabitsInfo(habitItems);
+
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                dialogInterface.dismiss();
+            }
+        });
+        builder.create().show();
     }
 }
