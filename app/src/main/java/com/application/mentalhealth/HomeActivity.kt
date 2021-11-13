@@ -12,6 +12,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
 import com.application.mentalhealth.HomeFragment.adapters.PageAdapter
+import com.application.mentalhealth.SimpleViews.chatActivity
 
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
@@ -54,6 +55,8 @@ class HomeActivity : AppCompatActivity() {
         bottomNavigationView.setOnNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.home -> setupBottomNavigationBar()
+                R.id.msg -> setupchatActivity()
+
             }
             true
         }
@@ -62,6 +65,12 @@ class HomeActivity : AppCompatActivity() {
         }
 
     }
+
+    private fun setupchatActivity() {
+        val intent: Intent = Intent(this,chatActivity::class.java)
+        startActivity(intent)
+    }
+
 
     private fun setupBottomNavigationBar() {
         val intent: Intent = Intent(this, DiscoverActivity::class.java)

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MentalHealth">
         <activity
+            android:name=".SimpleViews.chatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MyNursery.NurseryActivity"
+            android:exported="false" />
+        <activity
             android:name=".SimpleViews.DiscoverActivity"
             android:exported="true" />
         <activity
@@ -32,7 +38,7 @@
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
 
-        <receiver android:name="com.application.mentalhealth.HomeFragment.broadcastReceiver.AlarmReceiver" />
+        <receiver android:name=".HomeFragment.broadcastReceiver.AlarmReceiver" />
     </application>
 
 </manifest>
