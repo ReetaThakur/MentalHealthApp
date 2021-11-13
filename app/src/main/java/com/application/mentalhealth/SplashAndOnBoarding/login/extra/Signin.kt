@@ -10,6 +10,7 @@ import android.widget.Toast
 import androidx.fragment.app.FragmentTransaction
 import androidx.navigation.Navigation
 import com.application.mentalhealth.R
+import com.application.mentalhealth.SplashAndOnBoarding.FourthScreen
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.fragment_login2.*
 
@@ -50,8 +51,8 @@ class Signin : Fragment(R.layout.fragment_signin) {
                     Toast.makeText(
                         context,
                         "Login successful!!" + mAuth.currentUser!!.email, Toast.LENGTH_LONG).show()
-                    Navigation.findNavController(requireView())
-                        .navigate(R.id.action_signin_to_fourthScreen)
+                    val fragmentTransaction : FragmentTransaction = fragmentManager?.beginTransaction()!!
+                    fragmentTransaction.replace(R.id.fragmentContainerView,FourthScreen()).commit()
                 } else {
 
                     Toast.makeText(context, "inValid Credentials ", Toast.LENGTH_LONG).show()
