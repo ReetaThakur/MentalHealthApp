@@ -61,9 +61,9 @@ class TodayGoalsFragment : Fragment(R.layout.fragment_today_habit),ClickListner 
 
             CoroutineScope(Dispatchers.IO).launch {
                 viewModel.deleteHabitsInfo(habitItems)
-                CoroutineScope(Dispatchers.Main).launch {
-                    todayAdapter.notifyDataSetChanged()
-                }
+//                CoroutineScope(Dispatchers.Main).launch {
+//                    todayAdapter.notifyDataSetChanged()
+//                }
 
             }
         }
