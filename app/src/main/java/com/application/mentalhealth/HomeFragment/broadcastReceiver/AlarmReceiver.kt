@@ -1,4 +1,4 @@
-package com.application.mentalhealth.broadcastReceiver
+package com.application.mentalhealth.HomeFragment.broadcastReceiver
 
 import android.content.BroadcastReceiver
 import android.content.Context

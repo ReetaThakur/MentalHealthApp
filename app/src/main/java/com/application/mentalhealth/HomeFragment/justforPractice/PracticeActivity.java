@@ -1,4 +1,4 @@
-package com.application.mentalhealth.justforPractice;
+package com.application.mentalhealth.HomeFragment.justforPractice;
 
 import androidx.appcompat.app.AppCompatActivity;
 

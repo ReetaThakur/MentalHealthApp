@@ -1,4 +1,4 @@
-package com.application.mentalhealth.adapters
+package com.application.mentalhealth.HomeFragment.adapters
 
 import android.graphics.Color
 import android.view.LayoutInflater
@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
-import com.application.mentalhealth.dataClasses.AddHabitItems
+import com.application.mentalhealth.HomeFragment.dataClasses.AddHabitItems
 import com.application.mentalhealth.R
 
 class AddHabitAdapter(var habitList: ArrayList<AddHabitItems>):RecyclerView.Adapter<AddHabitAdapter.HabitViewHolder>() {

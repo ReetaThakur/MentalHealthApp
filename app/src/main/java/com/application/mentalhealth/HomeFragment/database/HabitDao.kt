@@ -1,9 +1,9 @@
-package com.application.mentalhealth.database
+package com.application.mentalhealth.HomeFragment.database
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.application.mentalhealth.dataClasses.AddHabitItems
+import com.application.mentalhealth.HomeFragment.dataClasses.AddHabitItems
 
 
 @Dao

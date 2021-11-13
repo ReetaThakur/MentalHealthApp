@@ -6,16 +6,12 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.os.Handler
 import android.view.*
-import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.drawerlayout.widget.DrawerLayout
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
-import com.application.mentalhealth.SimpleViews.ConnectorActivity
 import com.application.mentalhealth.SimpleViews.DiscoverActivity
-import com.application.mentalhealth.adapters.PageAdapter
+import com.application.mentalhealth.HomeFragment.adapters.PageAdapter
 
 import com.google.android.material.navigation.NavigationView
 import com.google.android.material.tabs.TabLayout
@@ -23,7 +19,6 @@ import com.google.android.material.tabs.TabLayout.OnTabSelectedListener
 import com.google.android.material.tabs.TabLayout.TabLayoutOnPageChangeListener
 import kotlinx.android.synthetic.main.acceptchallengedialgoue.view.*
 import kotlinx.android.synthetic.main.activity_home.*
-import kotlinx.android.synthetic.main.quickchallengedialogue.*
 import kotlinx.android.synthetic.main.quickchallengedialogue.view.*
 
 class HomeActivity : AppCompatActivity() {

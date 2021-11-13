@@ -1,4 +1,4 @@
-package com.application.mentalhealth.dataClasses
+package com.application.mentalhealth.HomeFragment.dataClasses
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

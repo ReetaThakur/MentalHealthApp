@@ -1,4 +1,4 @@
-package com.application.mentalhealth.justforPractice;
+package com.application.mentalhealth.HomeFragment.justforPractice;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
